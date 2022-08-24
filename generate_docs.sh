@@ -30,7 +30,7 @@ done
 
 cd /$PROJECT
 git remote rm origin
-git remote add origin https://hardtekpt:12349fmvs@github.com/hardtekpt/sensor_network_docs.git
+git remote add origin https://hardtekpt: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@github.com/hardtekpt/sensor_network_docs.git
 mkdocs gh-deploy -q
 
 echo "Done !!"
