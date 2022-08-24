@@ -31,16 +31,16 @@ done
 cd /$PROJECT
 git remote rm origin
 git remote add origin https://hardtekpt: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@github.com/hardtekpt/sensor_network_docs.git
-mkdocs gh-deploy
+#mkdocs gh-deploy
 
 echo "Done !!"
 
-rm -r site
+#rm -r site
 
 for (( j=0; j<length; j++ ));
 do
     cd /$PROJECT/${PACKETS[$j]}
-    rm -r docs
+    #rm -r docs
 done
 
 
