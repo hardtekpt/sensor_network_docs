@@ -6,6 +6,8 @@ PACKETS=( node gateway_serial)
 PACKETS_NAME=( Node Gateway )
 length=${#PACKETS[@]}
 
+token=`cat .secret`  
+
 for (( j=0; j<length; j++ ));
 do
     cd /$PROJECT/${PACKETS[$j]}
@@ -30,7 +32,7 @@ done
 
 cd /$PROJECT
 git remote rm origin
-git remote add origin https://hardtekpt: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@github.com/hardtekpt/sensor_network_docs.git
+git remote add origin https://hardtekpt:$token@github.com/hardtekpt/sensor_network_docs.git
 mkdocs gh-deploy
 
 echo "Done !!"
