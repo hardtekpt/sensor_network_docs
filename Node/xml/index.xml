@@ -88,4 +88,67 @@
     <member refid="node__definitions_8h_1a809320f7b367f3ab858a2e3766887075" kind="variable"><name>sensN</name></member>
     <member refid="node__definitions_8h_1a68d2aaad41a4fee4b247f7cd5b8e2a08" kind="variable"><name>actN</name></member>
   </compound>
+  <compound refid="node__definitions__1_8h" kind="file"><name>node_definitions_1.h</name>
+    <member refid="node__definitions__1_8h_1a2dd443a4430713d325ab86895a4a45eb" kind="define"><name>SCK</name></member>
+    <member refid="node__definitions__1_8h_1a7334c540878c8c4d801fd75ed9fd8063" kind="define"><name>MISO</name></member>
+    <member refid="node__definitions__1_8h_1a5d3f11f2fdf8a7e27b975291e0c2c8cc" kind="define"><name>MOSI</name></member>
+    <member refid="node__definitions__1_8h_1a88f7782e210e61586baf33b93240d905" kind="define"><name>SS</name></member>
+    <member refid="node__definitions__1_8h_1ac5d957e4fd3dc11cd97a54cf9ca057a4" kind="define"><name>RST</name></member>
+    <member refid="node__definitions__1_8h_1a95c9efcc1a55a72bd5cca0bcfcd18a0c" kind="define"><name>DIO0</name></member>
+    <member refid="node__definitions__1_8h_1aa22cd6468e95b86aa191926692b846a0" kind="variable"><name>key</name></member>
+    <member refid="node__definitions__1_8h_1a16636cae661b5c1ee5fc4de9401865e2" kind="variable"><name>nodeID</name></member>
+    <member refid="node__definitions__1_8h_1a5e38207a63e9201a67206ae2918be68c" kind="variable"><name>vbatPin</name></member>
+    <member refid="node__definitions__1_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
+    <member refid="node__definitions__1_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
+  </compound>
+  <compound refid="node__definitions__2_8h" kind="file"><name>node_definitions_2.h</name>
+    <member refid="node__definitions__2_8h_1a2dd443a4430713d325ab86895a4a45eb" kind="define"><name>SCK</name></member>
+    <member refid="node__definitions__2_8h_1a7334c540878c8c4d801fd75ed9fd8063" kind="define"><name>MISO</name></member>
+    <member refid="node__definitions__2_8h_1a5d3f11f2fdf8a7e27b975291e0c2c8cc" kind="define"><name>MOSI</name></member>
+    <member refid="node__definitions__2_8h_1a88f7782e210e61586baf33b93240d905" kind="define"><name>SS</name></member>
+    <member refid="node__definitions__2_8h_1ac5d957e4fd3dc11cd97a54cf9ca057a4" kind="define"><name>RST</name></member>
+    <member refid="node__definitions__2_8h_1a95c9efcc1a55a72bd5cca0bcfcd18a0c" kind="define"><name>DIO0</name></member>
+    <member refid="node__definitions__2_8h_1aa22cd6468e95b86aa191926692b846a0" kind="variable"><name>key</name></member>
+    <member refid="node__definitions__2_8h_1a16636cae661b5c1ee5fc4de9401865e2" kind="variable"><name>nodeID</name></member>
+    <member refid="node__definitions__2_8h_1a5e38207a63e9201a67206ae2918be68c" kind="variable"><name>vbatPin</name></member>
+    <member refid="node__definitions__2_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
+    <member refid="node__definitions__2_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
+  </compound>
+  <compound refid="node__definitions__3_8h" kind="file"><name>node_definitions_3.h</name>
+    <member refid="node__definitions__3_8h_1a2dd443a4430713d325ab86895a4a45eb" kind="define"><name>SCK</name></member>
+    <member refid="node__definitions__3_8h_1a7334c540878c8c4d801fd75ed9fd8063" kind="define"><name>MISO</name></member>
+    <member refid="node__definitions__3_8h_1a5d3f11f2fdf8a7e27b975291e0c2c8cc" kind="define"><name>MOSI</name></member>
+    <member refid="node__definitions__3_8h_1a88f7782e210e61586baf33b93240d905" kind="define"><name>SS</name></member>
+    <member refid="node__definitions__3_8h_1ac5d957e4fd3dc11cd97a54cf9ca057a4" kind="define"><name>RST</name></member>
+    <member refid="node__definitions__3_8h_1a95c9efcc1a55a72bd5cca0bcfcd18a0c" kind="define"><name>DIO0</name></member>
+    <member refid="node__definitions__3_8h_1aa22cd6468e95b86aa191926692b846a0" kind="variable"><name>key</name></member>
+    <member refid="node__definitions__3_8h_1a16636cae661b5c1ee5fc4de9401865e2" kind="variable"><name>nodeID</name></member>
+    <member refid="node__definitions__3_8h_1a5e38207a63e9201a67206ae2918be68c" kind="variable"><name>vbatPin</name></member>
+    <member refid="node__definitions__3_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
+    <member refid="node__definitions__3_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
+  </compound>
+  <compound refid="node__definitions__4_8h" kind="file"><name>node_definitions_4.h</name>
+    <member refid="node__definitions__4_8h_1a2dd443a4430713d325ab86895a4a45eb" kind="define"><name>SCK</name></member>
+    <member refid="node__definitions__4_8h_1a7334c540878c8c4d801fd75ed9fd8063" kind="define"><name>MISO</name></member>
+    <member refid="node__definitions__4_8h_1a5d3f11f2fdf8a7e27b975291e0c2c8cc" kind="define"><name>MOSI</name></member>
+    <member refid="node__definitions__4_8h_1a88f7782e210e61586baf33b93240d905" kind="define"><name>SS</name></member>
+    <member refid="node__definitions__4_8h_1ac5d957e4fd3dc11cd97a54cf9ca057a4" kind="define"><name>RST</name></member>
+    <member refid="node__definitions__4_8h_1a95c9efcc1a55a72bd5cca0bcfcd18a0c" kind="define"><name>DIO0</name></member>
+    <member refid="node__definitions__4_8h_1aa22cd6468e95b86aa191926692b846a0" kind="variable"><name>key</name></member>
+    <member refid="node__definitions__4_8h_1a16636cae661b5c1ee5fc4de9401865e2" kind="variable"><name>nodeID</name></member>
+    <member refid="node__definitions__4_8h_1a5e38207a63e9201a67206ae2918be68c" kind="variable"><name>vbatPin</name></member>
+    <member refid="node__definitions__4_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
+    <member refid="node__definitions__4_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
+  </compound>
+  <compound refid="node__definitions__uno_8h" kind="file"><name>node_definitions_uno.h</name>
+    <member refid="node__definitions__uno_8h_1a88f7782e210e61586baf33b93240d905" kind="define"><name>SS</name></member>
+    <member refid="node__definitions__uno_8h_1ac5d957e4fd3dc11cd97a54cf9ca057a4" kind="define"><name>RST</name></member>
+    <member refid="node__definitions__uno_8h_1a95c9efcc1a55a72bd5cca0bcfcd18a0c" kind="define"><name>DIO0</name></member>
+    <member refid="node__definitions__uno_8h_1aa22cd6468e95b86aa191926692b846a0" kind="variable"><name>key</name></member>
+    <member refid="node__definitions__uno_8h_1a16636cae661b5c1ee5fc4de9401865e2" kind="variable"><name>nodeID</name></member>
+    <member refid="node__definitions__uno_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
+    <member refid="node__definitions__uno_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
+  </compound>
+  <compound refid="dir_bbe80895da9089dc2b343d9c86835d12" kind="dir"><name>/sensor_network/node/node_definitions</name>
+  </compound>
 </doxygenindex>

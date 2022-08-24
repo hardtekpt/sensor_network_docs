@@ -8,25 +8,39 @@ length=${#PACKETS[@]}
 
 for (( j=0; j<length; j++ ));
 do
-    cd /$PROJECT/${PACKETS[$j]}/docs
+    cd /$PROJECT/${PACKETS[$j]}
+    mkdir docs
+    cd docs
 
     BASE_URL=/${PACKETS_NAME[$j]}/
-    rm -r * 
+    #rm -r * 
     # fix
     doxygen ../../docs/Doxyfile
+
+    echo "Generated xml and html documentation for '${PACKETS_NAME[$j]}'"
 
     doxybook2 --input xml \
               --output . \
               --config ../../docs/doxybook_conf.json \
-              --config-data '{"baseUrl": "'$BASE_URL'"}'
-    #echo /$PROJECT/$i/docs
+              --config-data '{"baseUrl": "'$BASE_URL'"}'\
+              -q
+
+    echo "Generated markdown documentation for '${PACKETS_NAME[$j]}'"
+done
+
+cd /$PROJECT
+mkdocs gh-deploy -q
+
+echo "Done !!"
+
+rm -r site
+
+for (( j=0; j<length; j++ ));
+do
+    cd /$PROJECT/${PACKETS[$j]}
+    rm -r docs
 done
 
 
-
-
-#mkdocs
-
-#touch teste
 
 

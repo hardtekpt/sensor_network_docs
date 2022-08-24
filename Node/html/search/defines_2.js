@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['implementation_116',['IMPLEMENTATION',['../comms__protocol_8h.html#aafd24a334088de3d7fef309914d49101',1,'comms_protocol.h']]]
+  ['enc_5fblock_5fsize_140',['ENC_BLOCK_SIZE',['../comms__protocol_8h.html#a44257c425d2f3b28f78f1f0f048c3307',1,'comms_protocol.h']]]
 ];

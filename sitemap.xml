@@ -96,12 +96,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/dir_bbe80895da9089dc2b343d9c86835d12/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node_8ino/</loc>
          <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions_8h/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions__1_8h/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions__2_8h/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions__3_8h/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions__4_8h/</loc>
+         <lastmod>2022-08-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Files/node__definitions__uno_8h/</loc>
          <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

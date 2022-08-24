@@ -25,6 +25,7 @@
       </node>
       <node id="8">
         <label>node_definitions/node_definitions_3.h</label>
+        <link refid="node__definitions__3_8h"/>
       </node>
       <node id="1">
         <label>/sensor_network/node/comms_protocol.h</label>
