@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir__bbe80895da9089dc2b343d9c86835d12_8md" kind="file" language="Markdown">
+    <compoundname>dir_bbe80895da9089dc2b343d9c86835d12.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>/sensor_network/node/node_definitions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>/sensor_network/node/node_definitions</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Files</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**[/sensor_network/node/node_definitions/node_definitions_1.h](/Node/Files/node__definitions__1_8h/#file-node-definitions-1.h)**<sp/>&lt;br&gt;Definitions<sp/>for<sp/>node<sp/>with<sp/>id<sp/>1.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**[/sensor_network/node/node_definitions/node_definitions_2.h](/Node/Files/node__definitions__2_8h/#file-node-definitions-2.h)**<sp/>&lt;br&gt;Definitions<sp/>for<sp/>node<sp/>with<sp/>id<sp/>2.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**[/sensor_network/node/node_definitions/node_definitions_3.h](/Node/Files/node__definitions__3_8h/#file-node-definitions-3.h)**<sp/>&lt;br&gt;Definitions<sp/>for<sp/>node<sp/>with<sp/>id<sp/>3.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**[/sensor_network/node/node_definitions/node_definitions_4.h](/Node/Files/node__definitions__4_8h/#file-node-definitions-4.h)**<sp/>&lt;br&gt;Definitions<sp/>for<sp/>node<sp/>with<sp/>id<sp/>4.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>**[/sensor_network/node/node_definitions/node_definitions_uno.h](/Node/Files/node__definitions__uno_8h/#file-node-definitions-uno.h)**<sp/>&lt;br&gt;Definitions<sp/>for<sp/>node<sp/>with<sp/>id<sp/>1.<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Updated<sp/>on<sp/>2022-08-24<sp/>at<sp/>20:23:39<sp/>+0000</highlight></codeline>
+    </programlisting>
+    <location file="Files/dir_bbe80895da9089dc2b343d9c86835d12.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="node____definitions__8h_8md" kind="file" language="Markdown">
+    <compoundname>node__definitions_8h.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>node_definitions.h</highlight></codeline>
+<codeline><highlight class="normal">summary:<sp/>Header<sp/>file<sp/>for<sp/>the<sp/>node<sp/>program.<sp/>Contains<sp/>hardware<sp/>pinouts,<sp/>LoRa<sp/>modem<sp/>configs<sp/>and<sp/>node<sp/>settings.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>node_definitions.h</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Header<sp/>file<sp/>for<sp/>the<sp/>node<sp/>program.<sp/>Contains<sp/>hardware<sp/>pinouts,<sp/>LoRa<sp/>modem<sp/>configs<sp/>and<sp/>node<sp/>settings.<sp/><sp/>[More...](#detailed-description)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Attributes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>const<sp/>byte<sp/>|<sp/>**[netID](/Node/Files/node__definitions_8h/#variable-netid)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>const<sp/>int<sp/>|<sp/>**[sensN](/Node/Files/node__definitions_8h/#variable-sensn)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>const<sp/>int<sp/>|<sp/>**[actN](/Node/Files/node__definitions_8h/#variable-actn)**<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Defines</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/><sp/>|<sp/>**[BAUD_RATE](/Node/Files/node__definitions_8h/#define-baud-rate)**<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Detailed<sp/>Description</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Header<sp/>file<sp/>for<sp/>the<sp/>node<sp/>program.<sp/>Contains<sp/>hardware<sp/>pinouts,<sp/>LoRa<sp/>modem<sp/>configs<sp/>and<sp/>node<sp/>settings.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Author**:<sp/>Francisco<sp/>Santos<sp/>([francisco.velez@tecnico.ulisboa.pt](mailto:francisco.velez@tecnico.ulisboa.pt))<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Version**:<sp/>1.0<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Date**:<sp/>2022-08-10</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Copyright**:<sp/>Copyright<sp/>(c)<sp/>2022<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Attributes<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>netID</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>byte<sp/>netID<sp/>=<sp/>0xF3;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>sensN</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>int<sp/>sensN<sp/>=<sp/>sizeof(sensPin)/sizeof(int);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>actN</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>int<sp/>actN<sp/>=<sp/>sizeof(actPin)/sizeof(int);</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Macros<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>define<sp/>BAUD_RATE</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>BAUD_RATE<sp/>115200</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Source<sp/>code</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#ifndef<sp/>NODE_DEFINITIONS_H</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>NODE_DEFINITIONS_H</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Baud<sp/>rate<sp/>for<sp/>serial<sp/>communication</highlight></codeline>
+<codeline><highlight class="normal">#define<sp/>BAUD_RATE<sp/>115200</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Node<sp/>Settings</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>byte<sp/>netID<sp/>=<sp/>0xF3;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;node_definitions/node_definitions_3.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">const<sp/>int<sp/>sensN<sp/>=<sp/>sizeof(sensPin)/sizeof(int);</highlight></codeline>
+<codeline><highlight class="normal">const<sp/>int<sp/>actN<sp/>=<sp/>sizeof(actPin)/sizeof(int);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#endif</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Updated<sp/>on<sp/>2022-08-24<sp/>at<sp/>20:23:39<sp/>+0000</highlight></codeline>
+    </programlisting>
+    <location file="Files/node__definitions_8h.md"/>
+  </compounddef>
+</doxygen>

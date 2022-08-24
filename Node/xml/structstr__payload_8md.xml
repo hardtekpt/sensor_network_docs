@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="structstr__payload_8md" kind="file" language="Markdown">
+    <compoundname>structstr_payload.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>strPayload</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>strPayload</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`#include<sp/>&lt;comms_protocol.h&gt;`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Public<sp/>Attributes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>byte<sp/>|<sp/>**[nodeID](/Node/Classes/structstr_payload/#variable-nodeid)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>byte<sp/>|<sp/>**[sensorID](/Node/Classes/structstr_payload/#variable-sensorid)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>byte<sp/>|<sp/>**[msgID](/Node/Classes/structstr_payload/#variable-msgid)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>char<sp/>|<sp/>**[flag](/Node/Classes/structstr_payload/#variable-flag)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>byte<sp/>|<sp/>**[sensorVal](/Node/Classes/structstr_payload/#variable-sensorval)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>int<sp/>|<sp/>**[RSSI](/Node/Classes/structstr_payload/#variable-rssi)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>float<sp/>|<sp/>**[SNR](/Node/Classes/structstr_payload/#variable-snr)**<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Public<sp/>Attributes<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>nodeID</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">byte<sp/>nodeID;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>sensorID</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">byte<sp/>sensorID;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>msgID</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">byte<sp/>msgID;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>flag</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">char<sp/>flag;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>sensorVal</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">byte<sp/>sensorVal;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>RSSI</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>RSSI;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>SNR</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>SNR;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Updated<sp/>on<sp/>2022-08-24<sp/>at<sp/>20:23:39<sp/>+0000</highlight></codeline>
+    </programlisting>
+    <location file="Classes/structstr_payload.md"/>
+  </compounddef>
+</doxygen>

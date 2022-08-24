@@ -35,12 +35,12 @@ git remote add origin https://hardtekpt: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
 
 echo "Done !!"
 
-#rm -r site
+rm -r site
 
 for (( j=0; j<length; j++ ));
 do
     cd /$PROJECT/${PACKETS[$j]}
-    #rm -r docs
+    rm -r docs
 done
 
 

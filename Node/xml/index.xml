@@ -78,6 +78,42 @@
     <member refid="comms__protocol_8h_1a422ca7dc35be9c6885ef6a17191d2d5b" kind="function"><name>setActState</name></member>
     <member refid="comms__protocol_8h_1ac8271805926e924f56b4d0f889c8bec1" kind="function"><name>mymin</name></member>
   </compound>
+  <compound refid="_classes_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="_examples_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="_files_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="_modules_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="_namespaces_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="_pages_2index_8md" kind="file"><name>index.md</name>
+  </compound>
+  <compound refid="structstr__msg_8md" kind="file"><name>structstr_msg.md</name>
+  </compound>
+  <compound refid="structstr__payload_8md" kind="file"><name>structstr_payload.md</name>
+  </compound>
+  <compound refid="comms____protocol__8cpp_8md" kind="file"><name>comms__protocol_8cpp.md</name>
+  </compound>
+  <compound refid="comms____protocol__8h_8md" kind="file"><name>comms__protocol_8h.md</name>
+  </compound>
+  <compound refid="dir__bbe80895da9089dc2b343d9c86835d12_8md" kind="file"><name>dir_bbe80895da9089dc2b343d9c86835d12.md</name>
+  </compound>
+  <compound refid="node__8ino_8md" kind="file"><name>node_8ino.md</name>
+  </compound>
+  <compound refid="node____definitions__8h_8md" kind="file"><name>node__definitions_8h.md</name>
+  </compound>
+  <compound refid="node____definitions____1__8h_8md" kind="file"><name>node__definitions__1_8h.md</name>
+  </compound>
+  <compound refid="node____definitions____2__8h_8md" kind="file"><name>node__definitions__2_8h.md</name>
+  </compound>
+  <compound refid="node____definitions____3__8h_8md" kind="file"><name>node__definitions__3_8h.md</name>
+  </compound>
+  <compound refid="node____definitions____4__8h_8md" kind="file"><name>node__definitions__4_8h.md</name>
+  </compound>
+  <compound refid="node____definitions____uno__8h_8md" kind="file"><name>node__definitions__uno_8h.md</name>
+  </compound>
   <compound refid="node_8ino" kind="file"><name>node.ino</name>
     <member refid="node_8ino_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
     <member refid="node_8ino_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
@@ -149,6 +185,18 @@
     <member refid="node__definitions__uno_8h_1ad7367c7a990bf9f0f68bfe7bd3994c4d" kind="variable"><name>sensPin</name></member>
     <member refid="node__definitions__uno_8h_1aea057e12a9529500529f6d9161964fd3" kind="variable"><name>actPin</name></member>
   </compound>
+  <compound refid="dir_f80231234abcd4b9cb00097fc3e9cdeb" kind="dir"><name>Classes</name>
+  </compound>
+  <compound refid="dir_90ff44073fa2418d4588bcc48a3ef69e" kind="dir"><name>Examples</name>
+  </compound>
+  <compound refid="dir_1557fe047a7d75e73bc869cb4be4afec" kind="dir"><name>Files</name>
+  </compound>
+  <compound refid="dir_fcbb4f4cb2529cc7a80c658b3e945a19" kind="dir"><name>Modules</name>
+  </compound>
+  <compound refid="dir_23c53b83bfb02da36a1d3d1e903a0cc7" kind="dir"><name>Namespaces</name>
+  </compound>
   <compound refid="dir_bbe80895da9089dc2b343d9c86835d12" kind="dir"><name>/sensor_network/node/node_definitions</name>
+  </compound>
+  <compound refid="dir_fffd37d94d0d85cd2889ff9aab29f1fa" kind="dir"><name>Pages</name>
   </compound>
 </doxygenindex>

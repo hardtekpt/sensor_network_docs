@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="comms____protocol__8cpp_8md" kind="file" language="Markdown">
+    <compoundname>comms__protocol_8cpp.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">title:<sp/>comms_protocol.cpp</highlight></codeline>
+<codeline><highlight class="normal">summary:<sp/>Communication<sp/>Protocol<sp/>library<sp/>-<sp/>set<sp/>of<sp/>functions<sp/>and<sp/>data<sp/>structures<sp/>used<sp/>to<sp/>build<sp/>a<sp/>network<sp/>using<sp/>the<sp/>LoRa<sp/>modulation<sp/>radios.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>comms_protocol.cpp</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Communication<sp/>Protocol<sp/>library<sp/>-<sp/>set<sp/>of<sp/>functions<sp/>and<sp/>data<sp/>structures<sp/>used<sp/>to<sp/>build<sp/>a<sp/>network<sp/>using<sp/>the<sp/>LoRa<sp/>modulation<sp/>radios.<sp/><sp/>[More...](#detailed-description)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Functions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>cppQueue<sp/>|<sp/>**[msg_q](/Node/Files/comms__protocol_8cpp/#function-msg-q)**(sizeof([Msg](/Node/Files/comms__protocol_8h/#typedef-msg))<sp/>,<sp/>[MAX_QUEUE_SIZE](/Node/Files/comms__protocol_8h/#define-max-queue-size)<sp/>,<sp/>[IMPLEMENTATION](/Node/Files/comms__protocol_8h/#define-implementation)<sp/>)<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[LoRa_rxMode](/Node/Files/comms__protocol_8cpp/#function-lora-rxmode)**()&lt;br&gt;Sets<sp/>the<sp/>LoRa<sp/>radio<sp/>to<sp/>receive<sp/>mode.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[LoRa_txMode](/Node/Files/comms__protocol_8cpp/#function-lora-txmode)**()&lt;br&gt;Sets<sp/>the<sp/>LoRa<sp/>radio<sp/>to<sp/>transmit<sp/>mode.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[LoRa_sendMessage](/Node/Files/comms__protocol_8cpp/#function-lora-sendmessage)**(byte<sp/>*<sp/>message)&lt;br&gt;Sets<sp/>the<sp/>radio<sp/>to<sp/>transmit<sp/>mode,<sp/>sends<sp/>a<sp/>message<sp/>string<sp/>using<sp/>the<sp/>LoRa<sp/>radio<sp/>and<sp/>sets<sp/>the<sp/>radio<sp/>back<sp/>to<sp/>receive<sp/>mode.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>byte<sp/>*<sp/>|<sp/>**[splitAndEncrypt2](/Node/Files/comms__protocol_8cpp/#function-splitandencrypt2)**(char<sp/>msg[MAX_PAYLOAD_SIZE])&lt;br&gt;Encrypts<sp/>a<sp/>message<sp/>(character<sp/>array)<sp/>using<sp/>the<sp/>AES256<sp/>algorythm<sp/>with<sp/>the<sp/>corresponding<sp/>node<sp/>key<sp/>The<sp/>encryption<sp/>is<sp/>made<sp/>by<sp/>encrypting<sp/>blocks<sp/>of<sp/>16<sp/>bytes<sp/>and<sp/>joining<sp/>them<sp/>together.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>char<sp/>*<sp/>|<sp/>**[decryptMsg2](/Node/Files/comms__protocol_8cpp/#function-decryptmsg2)**(char<sp/>msg[MAX_PAYLOAD_SIZE+1])&lt;br&gt;Decrypts<sp/>a<sp/>message<sp/>string<sp/>using<sp/>the<sp/>AES256<sp/>algorythm<sp/>with<sp/>the<sp/>corresponding<sp/>node<sp/>key.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>int<sp/>|<sp/>**[mymin](/Node/Files/comms__protocol_8cpp/#function-mymin)**(int<sp/>a,<sp/>int<sp/>b)&lt;br&gt;returns<sp/>the<sp/>minimum<sp/>value<sp/>between<sp/>two<sp/>integers<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[sendAck](/Node/Files/comms__protocol_8cpp/#function-sendack)**(byte<sp/>msgID)&lt;br&gt;Send<sp/>an<sp/>acknowledge<sp/>message<sp/>confirming<sp/>the<sp/>reception<sp/>of<sp/>an<sp/>uplink<sp/>transmission.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[sendStatus](/Node/Files/comms__protocol_8cpp/#function-sendstatus)**(byte<sp/>msgID)&lt;br&gt;Send<sp/>an<sp/>uplink<sp/>message<sp/>containing<sp/>the<sp/>node<sp/>status.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[setActState](/Node/Files/comms__protocol_8cpp/#function-setactstate)**(int<sp/>ID,<sp/>int<sp/>val)&lt;br&gt;Sets<sp/>the<sp/>state<sp/>of<sp/>the<sp/>relevant<sp/>actuator<sp/>with<sp/>the<sp/>relevant<sp/>value.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[sendSensorData](/Node/Files/comms__protocol_8cpp/#function-sendsensordata)**(byte<sp/>sensorID,<sp/>byte<sp/>sensorVal)&lt;br&gt;Adds<sp/>to<sp/>the<sp/>message<sp/>queue<sp/>an<sp/>uplink<sp/>message<sp/>containing<sp/>sensor<sp/>data.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[getMsgFromQueueAndSend](/Node/Files/comms__protocol_8cpp/#function-getmsgfromqueueandsend)**(unsigned<sp/>long<sp/>currentMillis)&lt;br&gt;Get<sp/>a<sp/>message<sp/>from<sp/>the<sp/>send<sp/>queue<sp/>and<sp/>send<sp/>it.<sp/>Implements<sp/>retransmission<sp/>in<sp/>case<sp/>an<sp/>acknowledge<sp/>message<sp/>is<sp/>not<sp/>received.<sp/>Aware<sp/>of<sp/>a<sp/>failed<sp/>transmission.<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>void<sp/>|<sp/>**[onReceive](/Node/Files/comms__protocol_8cpp/#function-onreceive)**(int<sp/>packetSize)&lt;br&gt;Called<sp/>every<sp/>time<sp/>a<sp/>new<sp/>message<sp/>is<sp/>received.<sp/>Filters<sp/>unwanted<sp/>messages,<sp/>decrypts<sp/>the<sp/>payload,<sp/>gets<sp/>the<sp/>relevant<sp/>fields<sp/>from<sp/>the<sp/>payload<sp/>and<sp/>sends<sp/>back<sp/>an<sp/>acknowledge<sp/>message<sp/>if<sp/>necessary.<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Attributes</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Name<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>--------------<sp/>|<sp/>--------------<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>int<sp/>|<sp/>**[currMsg](/Node/Files/comms__protocol_8cpp/#variable-currmsg)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>int<sp/>|<sp/>**[count](/Node/Files/comms__protocol_8cpp/#variable-count)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>unsigned<sp/>long<sp/>|<sp/>**[prevMil](/Node/Files/comms__protocol_8cpp/#variable-prevmil)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>unsigned<sp/>long<sp/>|<sp/>**[prevMilSU](/Node/Files/comms__protocol_8cpp/#variable-prevmilsu)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>float<sp/>|<sp/>**[VBAT](/Node/Files/comms__protocol_8cpp/#variable-vbat)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>int<sp/>|<sp/>**[msgCount](/Node/Files/comms__protocol_8cpp/#variable-msgcount)**<sp/><sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>aes256_context<sp/>|<sp/>**[ctxt](/Node/Files/comms__protocol_8cpp/#variable-ctxt)**<sp/><sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Detailed<sp/>Description</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Communication<sp/>Protocol<sp/>library<sp/>-<sp/>set<sp/>of<sp/>functions<sp/>and<sp/>data<sp/>structures<sp/>used<sp/>to<sp/>build<sp/>a<sp/>network<sp/>using<sp/>the<sp/>LoRa<sp/>modulation<sp/>radios.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Author**:<sp/>Francisco<sp/>Santos<sp/>([francisco.velez@tecnico.ulisboa.pt](mailto:francisco.velez@tecnico.ulisboa.pt))<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Version**:<sp/>1.0<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Date**:<sp/>2022-08-10</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Copyright**:<sp/>Copyright<sp/>(c)<sp/>2022<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Functions<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>msg_q</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">cppQueue<sp/>msg_q(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sizeof(Msg)<sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>MAX_QUEUE_SIZE<sp/>,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>IMPLEMENTATION<sp/></highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>LoRa_rxMode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_rxMode()</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sets<sp/>the<sp/>LoRa<sp/>radio<sp/>to<sp/>receive<sp/>mode.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>LoRa_txMode</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_txMode()</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sets<sp/>the<sp/>LoRa<sp/>radio<sp/>to<sp/>transmit<sp/>mode.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>LoRa_sendMessage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_sendMessage(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>*<sp/>message</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sets<sp/>the<sp/>radio<sp/>to<sp/>transmit<sp/>mode,<sp/>sends<sp/>a<sp/>message<sp/>string<sp/>using<sp/>the<sp/>LoRa<sp/>radio<sp/>and<sp/>sets<sp/>the<sp/>radio<sp/>back<sp/>to<sp/>receive<sp/>mode.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**message**<sp/>message<sp/>to<sp/>send<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>splitAndEncrypt2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">byte<sp/>*<sp/>splitAndEncrypt2(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>char<sp/>msg[MAX_PAYLOAD_SIZE]</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Encrypts<sp/>a<sp/>message<sp/>(character<sp/>array)<sp/>using<sp/>the<sp/>AES256<sp/>algorythm<sp/>with<sp/>the<sp/>corresponding<sp/>node<sp/>key<sp/>The<sp/>encryption<sp/>is<sp/>made<sp/>by<sp/>encrypting<sp/>blocks<sp/>of<sp/>16<sp/>bytes<sp/>and<sp/>joining<sp/>them<sp/>together.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**msg**<sp/>message<sp/>array<sp/>to<sp/>be<sp/>decrypted<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>byte*<sp/>a<sp/>byte<sp/>array<sp/>containing<sp/>the<sp/>encrypted<sp/>message<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>decryptMsg2</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">char<sp/>*<sp/>decryptMsg2(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>char<sp/>msg[MAX_PAYLOAD_SIZE+1]</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Decrypts<sp/>a<sp/>message<sp/>string<sp/>using<sp/>the<sp/>AES256<sp/>algorythm<sp/>with<sp/>the<sp/>corresponding<sp/>node<sp/>key.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**msg**<sp/>message<sp/>string<sp/>to<sp/>be<sp/>decrypted<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>char*<sp/>an<sp/>array<sp/>of<sp/>characters<sp/>containing<sp/>the<sp/>decrypted<sp/>message<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>mymin</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>mymin(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>a,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>b</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">returns<sp/>the<sp/>minimum<sp/>value<sp/>between<sp/>two<sp/>integers<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**a**<sp/>first<sp/>integer<sp/>to<sp/>compare<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**b**<sp/>second<sp/>integer<sp/>to<sp/>compare<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>int<sp/>the<sp/>smaller<sp/>between<sp/>a<sp/>and<sp/>b<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>sendAck</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>sendAck(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>msgID</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Send<sp/>an<sp/>acknowledge<sp/>message<sp/>confirming<sp/>the<sp/>reception<sp/>of<sp/>an<sp/>uplink<sp/>transmission.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**msgID**<sp/>ID<sp/>of<sp/>the<sp/>message<sp/>being<sp/>acknowledged<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>sendStatus</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>sendStatus(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>msgID</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Send<sp/>an<sp/>uplink<sp/>message<sp/>containing<sp/>the<sp/>node<sp/>status.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**msgID**<sp/>ID<sp/>of<sp/>the<sp/>status<sp/>request<sp/>message<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>setActState</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>setActState(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>ID,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>val</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Sets<sp/>the<sp/>state<sp/>of<sp/>the<sp/>relevant<sp/>actuator<sp/>with<sp/>the<sp/>relevant<sp/>value.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**ID**<sp/>ID<sp/>of<sp/>the<sp/>relevant<sp/>actuator<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**val**<sp/>value<sp/>to<sp/>which<sp/>the<sp/>actuator<sp/>is<sp/>set<sp/>to<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>sendSensorData</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>sendSensorData(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>sensorID,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>sensorVal</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adds<sp/>to<sp/>the<sp/>message<sp/>queue<sp/>an<sp/>uplink<sp/>message<sp/>containing<sp/>sensor<sp/>data.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**sensorID**<sp/>ID<sp/>of<sp/>the<sp/>relevant<sp/>sensor<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**sensorVal**<sp/>value<sp/>read<sp/>from<sp/>the<sp/>relevant<sp/>sensor<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note:<sp/>The<sp/>ADC<sp/>value<sp/>is<sp/>a<sp/>12-bit<sp/>number,<sp/>so<sp/>the<sp/>maximum<sp/>value<sp/>is<sp/>4095<sp/>(counting<sp/>from<sp/>0).<sp/>To<sp/>convert<sp/>the<sp/>ADC<sp/>integer<sp/>value<sp/>to<sp/>a<sp/>real<sp/>voltage<sp/>you’ll<sp/>need<sp/>to<sp/>divide<sp/>it<sp/>by<sp/>the<sp/>maximum<sp/>value<sp/>of<sp/>4095,<sp/>then<sp/>double<sp/>it<sp/>(note<sp/>above<sp/>that<sp/>Adafruit<sp/>halves<sp/>the<sp/>voltage),<sp/>then<sp/>multiply<sp/>that<sp/>by<sp/>the<sp/>reference<sp/>voltage<sp/>of<sp/>the<sp/>ESP32<sp/>which<sp/>is<sp/>3.3V<sp/>and<sp/>then<sp/>vinally,<sp/>multiply<sp/>that<sp/>again<sp/>by<sp/>the<sp/>ADC<sp/>Reference<sp/>Voltage<sp/>of<sp/>1100mV.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>getMsgFromQueueAndSend</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>getMsgFromQueueAndSend(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>unsigned<sp/>long<sp/>currentMillis</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Get<sp/>a<sp/>message<sp/>from<sp/>the<sp/>send<sp/>queue<sp/>and<sp/>send<sp/>it.<sp/>Implements<sp/>retransmission<sp/>in<sp/>case<sp/>an<sp/>acknowledge<sp/>message<sp/>is<sp/>not<sp/>received.<sp/>Aware<sp/>of<sp/>a<sp/>failed<sp/>transmission.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**currentMillis**<sp/>current<sp/>time<sp/>in<sp/>millisenconds<sp/>since<sp/>boot<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>function<sp/>onReceive</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>onReceive(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>packetSize</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Called<sp/>every<sp/>time<sp/>a<sp/>new<sp/>message<sp/>is<sp/>received.<sp/>Filters<sp/>unwanted<sp/>messages,<sp/>decrypts<sp/>the<sp/>payload,<sp/>gets<sp/>the<sp/>relevant<sp/>fields<sp/>from<sp/>the<sp/>payload<sp/>and<sp/>sends<sp/>back<sp/>an<sp/>acknowledge<sp/>message<sp/>if<sp/>necessary.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Parameters**:<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>**packetSize**<sp/>size<sp/>of<sp/>the<sp/>incoming<sp/>message<sp/>in<sp/>bytes<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Return**:<sp/>void<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Attributes<sp/>Documentation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>currMsg</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>currMsg<sp/>=<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>count</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>prevMil</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>long<sp/>prevMil;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>prevMilSU</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>long<sp/>prevMilSU;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>VBAT</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>VBAT<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>msgCount</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>msgCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>variable<sp/>ctxt</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">aes256_context<sp/>ctxt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Source<sp/>code</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;comms_protocol.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>currMsg<sp/>=<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>long<sp/>prevMil;</highlight></codeline>
+<codeline><highlight class="normal">unsigned<sp/>long<sp/>prevMilSU;</highlight></codeline>
+<codeline><highlight class="normal">float<sp/>VBAT<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline><highlight class="normal">int<sp/>msgCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">cppQueue<sp/><sp/>msg_q(sizeof(Msg),<sp/>MAX_QUEUE_SIZE,<sp/>IMPLEMENTATION);</highlight></codeline>
+<codeline><highlight class="normal">aes256_context<sp/>ctxt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_rxMode()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.enableInvertIQ();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.receive();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_txMode()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.idle();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.disableInvertIQ();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>LoRa_sendMessage(byte<sp/>*message)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa_txMode();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>set<sp/>tx<sp/>mode</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.beginPacket();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>start<sp/>packet</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.write(netID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.write(nodeID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//LoRa.print(message);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>add<sp/>payload</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.write(message,<sp/>MAX_ENC_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa.endPacket(false);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>finish<sp/>packet<sp/>and<sp/>send<sp/>it</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>LoRa_rxMode();</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*String<sp/>splitAndEncrypt(char<sp/>msg[MAX_PAYLOAD_SIZE])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>enc<sp/>=<sp/>&quot;&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_init(&amp;ctxt,(uint8_t<sp/>*)<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>char<sp/>*<sp/>p<sp/>=<sp/>msg;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>while<sp/>(strlen<sp/>(p)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>plain<sp/>[BLOCK_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>memset<sp/>(plain,<sp/>0,<sp/>BLOCK_SIZE);<sp/><sp/>//<sp/>ensure<sp/>trailing<sp/>zeros</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy<sp/>(plain,<sp/>p,<sp/>mymin<sp/>(strlen<sp/>(p),<sp/>BLOCK_SIZE));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>aes256_encrypt_ecb(&amp;ctxt,<sp/>plain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>enc<sp/>+=<sp/>String((char<sp/>*)plain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>+=<sp/>mymin<sp/>(strlen<sp/>(p),<sp/>BLOCK_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_done(&amp;ctxt);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>enc;</highlight></codeline>
+<codeline><highlight class="normal">}*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">byte<sp/>*splitAndEncrypt2(char<sp/>msg[MAX_PAYLOAD_SIZE])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>enc<sp/>=<sp/>&quot;&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_init(&amp;ctxt,(uint8_t<sp/>*)<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>char<sp/>*<sp/>p<sp/>=<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>byte<sp/>plain<sp/>[BLOCK_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>while<sp/>(strlen<sp/>(p)<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>memset<sp/>(plain,<sp/>0,<sp/>BLOCK_SIZE);<sp/><sp/>//<sp/>ensure<sp/>trailing<sp/>zeros</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy<sp/>(plain,<sp/>p,<sp/>mymin<sp/>(strlen<sp/>(p),<sp/>BLOCK_SIZE));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>aes256_encrypt_ecb(&amp;ctxt,<sp/>plain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>plain;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>enc<sp/>+=<sp/>String((char<sp/>*)plain);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>p<sp/>+=<sp/>mymin<sp/>(strlen<sp/>(p),<sp/>BLOCK_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_done(&amp;ctxt);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Function:<sp/>decryptMsg</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>----------------------------</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/>Decrypts<sp/>a<sp/>message<sp/>string<sp/>using<sp/>the<sp/>AES256<sp/>algorythm<sp/>with<sp/>the<sp/>corresponding<sp/>node<sp/>key</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/>msg:<sp/>message<sp/>string<sp/>to<sp/>be<sp/>decrypted</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/><sp/><sp/>returns:<sp/>an<sp/>array<sp/>of<sp/>characters<sp/>containing<sp/>the<sp/>decrypted<sp/>message</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">char<sp/><sp/>*decryptMsg(String<sp/>msg)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>uint8_t<sp/>data[MAX_PAYLOAD_SIZE+1];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>char<sp/>m[MAX_PAYLOAD_SIZE+1];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.toCharArray(m,<sp/>MAX_PAYLOAD_SIZE+1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_decrypt_ecb(&amp;ctxt,<sp/>(uint8_t<sp/>*)m);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>(char<sp/>*)m;</highlight></codeline>
+<codeline><highlight class="normal">}*/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">char<sp/><sp/>*decryptMsg2(char<sp/>msg[MAX_PAYLOAD_SIZE+1])<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>uint8_t<sp/>data[MAX_PAYLOAD_SIZE+1];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>memcpy(data,<sp/>msg,<sp/>MAX_PAYLOAD_SIZE+1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//static<sp/>char<sp/>m[MAX_PAYLOAD_SIZE+1];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//msg.toCharArray(m,<sp/>MAX_PAYLOAD_SIZE+1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>aes256_decrypt_ecb(&amp;ctxt,<sp/>(uint8_t<sp/>*)data);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>(char<sp/>*)data;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">int<sp/>mymin(int<sp/>a,<sp/>int<sp/>b){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(a&gt;b)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>a;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>sendAck(byte<sp/>msgID)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>enc;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>payload[MAX_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>encP[MAX_ENC_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>l<sp/>=<sp/>(byte)MAX_PAYLOAD_SIZE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Msg<sp/>msg;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#if<sp/>defined(ESP32)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>VBAT<sp/>=<sp/>(float)(analogRead(vbatPin))<sp/>/<sp/>4095*2*3.3*1.1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>a<sp/>=<sp/>VBAT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>b<sp/>=<sp/>VBAT*10-a*10;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sprintf(payload,<sp/>&quot;%c%c%c%c%c%c%c%c&quot;,<sp/>(char)nodeID,<sp/>(char)msgID,<sp/>(char)l,<sp/>&apos;a&apos;,<sp/>(char)48,<sp/>(char)48,<sp/>(char)a+1,<sp/>(char)b+1);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc<sp/>=<sp/>splitAndEncrypt(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc.toCharArray(msg.msg,<sp/>MAX_ENC_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>*plain<sp/>=<sp/>splitAndEncrypt2(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>memcpy(msg.msg,<sp/>plain,<sp/>MAX_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msg[MAX_PAYLOAD_SIZE]<sp/>=<sp/>&apos;\0&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.print(&quot;add<sp/>ack<sp/>to<sp/>queue:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.println(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.print(&quot;enc<sp/>msg:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.println(msg.msg);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msgID<sp/>=<sp/>msgID;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.flag<sp/>=<sp/>&apos;a&apos;;<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg_q.push(&amp;msg);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>sendStatus(byte<sp/>msgID)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Msg<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>enc;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>payload[MAX_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msgID<sp/>=<sp/>msgID;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>l<sp/>=<sp/>(byte)<sp/>MAX_PAYLOAD_SIZE;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#if<sp/>defined(ESP32)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>VBAT<sp/>=<sp/>(float)(analogRead(vbatPin))<sp/>/<sp/>4095*2*3.3*1.1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>a<sp/>=<sp/>VBAT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>b<sp/>=<sp/>VBAT*10-a*10;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sprintf(payload,<sp/>&quot;%c%c%c%c%c%c%c%c&quot;,<sp/>(char)nodeID,<sp/>(char)msgID,<sp/>(char)l,<sp/>&apos;s&apos;,<sp/>(char)48,<sp/>(char)48,<sp/>(char)a+1,<sp/>(char)b+1);</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc<sp/>=<sp/>splitAndEncrypt(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc.toCharArray(msg.msg,<sp/>MAX_ENC_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>*plain<sp/>=<sp/>splitAndEncrypt2(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>memcpy(msg.msg,<sp/>plain,<sp/>MAX_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msg[MAX_PAYLOAD_SIZE]<sp/>=<sp/>&apos;\0&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.print(&quot;add<sp/>status<sp/>to<sp/>queue:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.println(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.print(&quot;enc<sp/>msg:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.println(msg.msg);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Add<sp/>msg<sp/>to<sp/>msg<sp/>queue</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.flag<sp/>=<sp/>&apos;s&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg_q.push(&amp;msg);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>setActState(int<sp/>ID,<sp/>int<sp/>val)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.print(&quot;Set<sp/>actuator:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.print(ID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.print(&quot;<sp/>with<sp/>value:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.println(val);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>digitalWrite(actPin[ID],<sp/>val);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>sendSensorData(byte<sp/>sensorID,<sp/>byte<sp/>sensorVal)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Msg<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>enc;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>payload[MAX_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msgCount<sp/>++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(msgCount<sp/>==<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>msgCount<sp/>++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msgID<sp/>=<sp/>(byte)<sp/>msgCount;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>l<sp/>=<sp/>MAX_PAYLOAD_SIZE;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#if<sp/>defined(ESP32)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>VBAT<sp/>=<sp/>(float)(analogRead(vbatPin))<sp/>/<sp/>4095*2*3.3*1.1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>#endif</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.println(VBAT);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>a<sp/>=<sp/>VBAT;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>b<sp/>=<sp/>VBAT*10-a*10;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>sprintf(payload,<sp/>&quot;%c%c%c%c%c%c%c%c&quot;,<sp/>(char)nodeID,<sp/>(char)msg.msgID,<sp/>(char)l,<sp/>&apos;u&apos;,<sp/>(char)(sensorID<sp/>+<sp/>1),<sp/>(char)(sensorVal<sp/>+<sp/>1),<sp/>(char)a+1,<sp/>(char)b+1);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc<sp/>=<sp/>splitAndEncrypt(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//enc.toCharArray(msg.msg,<sp/>MAX_ENC_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>*plain<sp/>=<sp/>splitAndEncrypt2(payload);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>memcpy(msg.msg,<sp/>plain,<sp/>MAX_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.msg[MAX_PAYLOAD_SIZE]<sp/>=<sp/>&apos;\0&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>Add<sp/>msg<sp/>to<sp/>msg<sp/>queue</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg.flag<sp/>=<sp/>&apos;u&apos;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>msg_q.push(&amp;msg);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>getMsgFromQueueAndSend(unsigned<sp/>long<sp/>currentMillis)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(!msg_q.isEmpty())<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Msg<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>msg_q.peek(&amp;msg);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(currMsg<sp/>==<sp/>msg.msgID)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>currMsg<sp/>=<sp/>msg.msgID;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(count<sp/>&lt;<sp/>MAX_N_RETRY)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(&quot;send<sp/>msg:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>//Serial.println(msg.msg);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LoRa_sendMessage(msg.msg);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>((msg.flag<sp/>==<sp/>&apos;s&apos;)<sp/>||<sp/>(msg.flag<sp/>==<sp/>&apos;a&apos;)){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg_q.drop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>currMsg<sp/>=<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(&quot;Failed<sp/>to<sp/>send<sp/>msg<sp/>with<sp/>id:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(msg.msgID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>msg_q.drop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>currMsg<sp/>=<sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>prevMil<sp/>=<sp/>currentMillis;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">void<sp/>onReceive(int<sp/>packetSize){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>rNetID<sp/>=<sp/>LoRa.read();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>byte<sp/>rnID<sp/>=<sp/>LoRa.read();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>buffer1[MAX_ENC_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>char<sp/>buffer2[MAX_ENC_PAYLOAD_SIZE];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>String<sp/>message<sp/>=<sp/>&quot;&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>i=0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>while<sp/>(LoRa.available()<sp/>&amp;&amp;<sp/>i&lt;MAX_ENC_PAYLOAD_SIZE)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//Serial.println(LoRa.peek(),<sp/>HEX);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>buffer1[i]<sp/>=<sp/>(char)LoRa.read();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//message<sp/>+=<sp/>(char)LoRa.read();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Serial.println(&quot;msg&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.println(message.length());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.println(MAX_ENC_PAYLOAD_SIZE);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//Serial.println(rNetID<sp/>==<sp/>netID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>if<sp/>(rNetID<sp/>==<sp/>netID)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(&quot;New<sp/>msg<sp/>received&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//int<sp/>j<sp/>=<sp/>message.length()<sp/>/<sp/>ENC_BLOCK_SIZE;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//int<sp/>h<sp/>=<sp/>message.length()<sp/>/<sp/>(1<sp/>*<sp/>j);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>len;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Payload<sp/>p;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(rnID<sp/>==<sp/>BROADCAST_ID)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>aes256_init(&amp;ctxt,(uint8_t<sp/>*)<sp/>keyBroadcast);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>aes256_init(&amp;ctxt,(uint8_t<sp/>*)<sp/>key);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//for<sp/>(int<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>j;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/><sp/>if<sp/>(i<sp/>==<sp/>0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/>strcpy(buffer1,<sp/>decryptMsg(message.substring(i<sp/>*<sp/>ENC_BLOCK_SIZE,<sp/>(i<sp/>+<sp/>1)<sp/>*<sp/>ENC_BLOCK_SIZE)));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/><sp/>else</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/>strcat(buffer1,<sp/>decryptMsg(message.substring(i<sp/>*<sp/>ENC_BLOCK_SIZE,<sp/>(i<sp/>+<sp/>1)<sp/>*<sp/>ENC_BLOCK_SIZE)));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(buffer2,<sp/>decryptMsg2(buffer1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>aes256_done(&amp;ctxt);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>buffer2[6]<sp/>=<sp/>&apos;\0&apos;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(buffer2);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if(sscanf(buffer2,<sp/>&quot;%c%c%c%c%c%c&quot;,<sp/>&amp;p.nodeID,<sp/>&amp;p.msgID,<sp/>&amp;len,<sp/>&amp;p.flag,<sp/>&amp;p.sensorID,<sp/>&amp;p.sensorVal)<sp/>==<sp/>6){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(p.flag);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Msg<sp/>msg;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>msg_q.peek(&amp;msg);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(p.nodeID<sp/>==<sp/>nodeID<sp/>||<sp/>p.nodeID<sp/>==<sp/>BROADCAST_ID)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(p.flag<sp/>==<sp/>&apos;a&apos;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(p.msgID<sp/>==<sp/>msg.msgID)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(&quot;Message<sp/>with<sp/>ID:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(p.msgID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(&quot;<sp/>delivered!&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg_q.drop();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(p.flag<sp/>==<sp/>&apos;s&apos;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(&quot;received<sp/>msg<sp/>with<sp/>id:<sp/>&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(p.msgID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendStatus(p.msgID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(p.flag<sp/>==<sp/>&apos;c&apos;)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Set<sp/>actuator<sp/>value<sp/>and<sp/>send<sp/>ack</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setActState((int)(p.sensorID<sp/>-<sp/>1),<sp/>(int)(p.sensorVal<sp/>-<sp/>1));</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sendAck(p.msgID);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-------------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Updated<sp/>on<sp/>2022-08-24<sp/>at<sp/>20:23:39<sp/>+0000</highlight></codeline>
+    </programlisting>
+    <location file="Files/comms__protocol_8cpp.md"/>
+  </compounddef>
+</doxygen>
