@@ -4,3 +4,4 @@ This repository holds the Sensor Network code stack for a LoRa based wireless se
 
 # Documentation
 
+https://hardtekpt.github.io/sensor_network_docs/
