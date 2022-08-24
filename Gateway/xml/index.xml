@@ -78,42 +78,8 @@
     <member refid="comms__protocol_8h_1a422ca7dc35be9c6885ef6a17191d2d5b" kind="function"><name>setActState</name></member>
     <member refid="comms__protocol_8h_1ac8271805926e924f56b4d0f889c8bec1" kind="function"><name>mymin</name></member>
   </compound>
-  <compound refid="_classes_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="_examples_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="_files_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="_modules_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="_namespaces_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="_pages_2index_8md" kind="file"><name>index.md</name>
-  </compound>
-  <compound refid="structstr__msg_8md" kind="file"><name>structstr_msg.md</name>
-  </compound>
-  <compound refid="structstr__payload_8md" kind="file"><name>structstr_payload.md</name>
-  </compound>
-  <compound refid="comms____protocol__8cpp_8md" kind="file"><name>comms__protocol_8cpp.md</name>
-  </compound>
-  <compound refid="comms____protocol__8h_8md" kind="file"><name>comms__protocol_8h.md</name>
-  </compound>
-  <compound refid="gateway____serial__8ino_8md" kind="file"><name>gateway__serial_8ino.md</name>
-  </compound>
   <compound refid="gateway__serial_8ino" kind="file"><name>gateway_serial.ino</name>
     <member refid="gateway__serial_8ino_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
     <member refid="gateway__serial_8ino_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
-  </compound>
-  <compound refid="dir_0c68614ac8d8401edbf4146ded722294" kind="dir"><name>Classes</name>
-  </compound>
-  <compound refid="dir_03680f297d755c096b0a1ead13ee12b7" kind="dir"><name>Examples</name>
-  </compound>
-  <compound refid="dir_8d93c22c2bc29a31b9caf9f001593817" kind="dir"><name>Files</name>
-  </compound>
-  <compound refid="dir_f2541a3b18981391fa76fac5599e978a" kind="dir"><name>Modules</name>
-  </compound>
-  <compound refid="dir_47133b8db10425aba84b3e9aa24a8eb1" kind="dir"><name>Namespaces</name>
-  </compound>
-  <compound refid="dir_8ee84b812603e70ef64c2b541b9d52cd" kind="dir"><name>Pages</name>
   </compound>
 </doxygenindex>
