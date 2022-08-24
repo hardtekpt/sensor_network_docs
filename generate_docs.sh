@@ -6,7 +6,8 @@ PACKETS=( node gateway_serial)
 PACKETS_NAME=( Node Gateway )
 length=${#PACKETS[@]}
 
-token=`cat .secret`  
+
+token=`cat /$PROJECT/.secret`  
 
 for (( j=0; j<length; j++ ));
 do
