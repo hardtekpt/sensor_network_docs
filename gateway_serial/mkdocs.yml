@@ -1,4 +1,4 @@
-site_name: sensor_network_docs/Gateway
+site_name: Gateway
 
 nav:
   - Files: "Files/index.md"
