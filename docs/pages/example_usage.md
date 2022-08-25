@@ -1,3 +1,1 @@
-# Sensor Network
-
-## Example Usage
+# Example Usage
