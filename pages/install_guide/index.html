@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sensor-network" class="md-skip">
+        <a href="#install-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -332,8 +332,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-guide" class="md-nav__link">
-    Install Guide
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -552,8 +566,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-guide" class="md-nav__link">
-    Install Guide
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clone-the-repository" class="md-nav__link">
+    Clone the repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -576,8 +604,44 @@
 
 
 
-<h1 id="sensor-network">Sensor Network</h1>
-<h2 id="install-guide">Install Guide</h2>
+<h1 id="install-guide">Install Guide</h1>
+<h2 id="requirements">Requirements</h2>
+<p>In order to set-up such a wireless sensor network, the following software is required:</p>
+<ul>
+<li>Arduino IDE</li>
+<li>Python3</li>
+</ul>
+<p>Additionally, the following Arduino libraries are required:</p>
+<ul>
+<li><a href="https://github.com/sandeepmistry/arduino-LoRa">LoRa.h</a></li>
+<li><a href="https://github.com/SMFSW/Queue">cppQueue.h</a></li>
+<li><a href="https://github.com/ilvn/aes256">aes256.h</a></li>
+</ul>
+<h2 id="clone-the-repository">Clone the repository</h2>
+<p>After ensuring all the aforementioned requirements are met this repository can be cloned and the contents can be opened in an editor like VScode:</p>
+<pre><code>git clone https://github.com/hardtekpt/sensor_network
+cd sensor_network
+code .
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>The packages now need to be configured according to the hardware available. The network has been tested with both the Arduino Uno platform using the SX1276 Dragino Shield and with the TTGO LoRa ESP32 modules. To this extent, the pin map for the LoRa radio must be configured for all devices:</p>
+<ul>
+<li>On the Gateway edit the <code>gateway_serial_definitions.h</code>;</li>
+<li>On every Node use the <code>node_definitions</code> folder and create a file for each node. This file is referenced by <code>node_definitions.h</code>.</li>
+</ul>
+<p>Additionally, every node needs a unique 32 byte encryption key. This key must also be added to the <code>gateway_serial_definitions.h</code> file. Finally, every node needs a unique hexadecimal ID. The gateway has the encryption keys of all the nodes in an array indexed by the node's ID.</p>
+<p>Regarding the Network Manager, the <code>wsn_config.yaml</code> must be edited to include:</p>
+<ul>
+<li>The serial port where gateway is attached;</li>
+<li>Information regarding each node:<ul>
+<li>ID;</li>
+<li>Geographic location;</li>
+<li>Sensors;</li>
+<li>Actuators;</li>
+</ul>
+</li>
+</ul>
+<p>The last thing to do is to attach any sensors and actuators to the nodes and upload the code. For this, see <a href="https://hardtekpt.github.io/sensor_network_docs/pages/example_usage/">Example Usage</a>.</p>
 
 
 
