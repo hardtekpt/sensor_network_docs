@@ -10,21 +10,21 @@
         <meta name="author" content="Francisco Santos">
       
       
-        <link rel="canonical" href="https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/">
+        <link rel="canonical" href="https://hardtekpt.github.io/sensor_network_docs/Gateway/Files/comms__protocol_8h/">
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
     
     
       
-        <title>comms_protocol.cpp - Sensor Network Documentation</title>
+        <title>comms_protocol.h - Sensor Network Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.69437709.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.69437709.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -40,7 +40,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#comms_protocolcpp" class="md-skip">
+        <a href="#comms_protocolh" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="Sensor Network Documentation" class="md-header__button md-logo" aria-label="Sensor Network Documentation" data-md-component="logo">
+    <a href="../../.." title="Sensor Network Documentation" class="md-header__button md-logo" aria-label="Sensor Network Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              comms_protocol.cpp
+              comms_protocol.h
             
           </span>
         </div>
@@ -208,7 +208,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Sensor Network Documentation" class="md-nav__button md-logo" aria-label="Sensor Network Documentation" data-md-component="logo">
+    <a href="../../.." title="Sensor Network Documentation" class="md-nav__button md-logo" aria-label="Sensor Network Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -282,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pages/repo_structure/" class="md-nav__link">
+      <a href="../../../pages/repo_structure/" class="md-nav__link">
         Repository Structure
       </a>
     </li>
@@ -296,7 +296,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pages/install_guide/" class="md-nav__link">
+      <a href="../../../pages/install_guide/" class="md-nav__link">
         Install Guide
       </a>
     </li>
@@ -310,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../pages/example_usage/" class="md-nav__link">
+      <a href="../../../pages/example_usage/" class="md-nav__link">
         Example Usage
       </a>
     </li>
@@ -386,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Node/Files/" class="md-nav__link">
+      <a href="../../../Node/Files/" class="md-nav__link">
         Files
       </a>
     </li>
@@ -400,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Node/Classes/" class="md-nav__link">
+      <a href="../../../Node/Classes/" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -509,6 +509,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -523,9 +537,43 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#defines" class="md-nav__link">
+    Defines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#detailed-description" class="md-nav__link">
     Detailed Description
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-documentation" class="md-nav__link">
+    Types Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Types Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#typedef-payload" class="md-nav__link">
+    typedef Payload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typedef-msg" class="md-nav__link">
+    typedef Msg
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -536,13 +584,6 @@
   
     <nav class="md-nav" aria-label="Functions Documentation">
       <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#function-msg_q" class="md-nav__link">
-    function msg_q
-  </a>
-  
-</li>
         
           <li class="md-nav__item">
   <a href="#function-lora_rxmode" class="md-nav__link">
@@ -566,8 +607,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-splitandencrypt2" class="md-nav__link">
-    function splitAndEncrypt2
+  <a href="#function-decryptmsg" class="md-nav__link">
+    function decryptMsg
   </a>
   
 </li>
@@ -580,29 +621,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-mymin" class="md-nav__link">
-    function mymin
+  <a href="#function-onreceive" class="md-nav__link">
+    function onReceive
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-sendack" class="md-nav__link">
-    function sendAck
+  <a href="#function-ontxdone" class="md-nav__link">
+    function onTxDone
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-sendstatus" class="md-nav__link">
-    function sendStatus
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#function-setactstate" class="md-nav__link">
-    function setActState
+  <a href="#function-splitandencrypt" class="md-nav__link">
+    function splitAndEncrypt
   </a>
   
 </li>
@@ -622,8 +656,29 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#function-onreceive" class="md-nav__link">
-    function onReceive
+  <a href="#function-sendstatus" class="md-nav__link">
+    function sendStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-sendack" class="md-nav__link">
+    function sendAck
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-setactstate" class="md-nav__link">
+    function setActState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-mymin" class="md-nav__link">
+    function mymin
   </a>
   
 </li>
@@ -640,6 +695,48 @@
   
     <nav class="md-nav" aria-label="Attributes Documentation">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-keybroadcast" class="md-nav__link">
+    variable keyBroadcast
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-frequency" class="md-nav__link">
+    variable frequency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-txpower" class="md-nav__link">
+    variable txPower
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-spreadingfactor" class="md-nav__link">
+    variable spreadingFactor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-signalbandwidth" class="md-nav__link">
+    variable signalBandwidth
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-codingratedenominator" class="md-nav__link">
+    variable codingRateDenominator
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#variable-currmsg" class="md-nav__link">
@@ -670,13 +767,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#variable-vbat" class="md-nav__link">
-    variable VBAT
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#variable-msgcount" class="md-nav__link">
     variable msgCount
   </a>
@@ -684,8 +774,105 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#variable-msg_q" class="md-nav__link">
+    variable msg_q
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#variable-ctxt" class="md-nav__link">
     variable ctxt
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macros-documentation" class="md-nav__link">
+    Macros Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Macros Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#define-implementation" class="md-nav__link">
+    define IMPLEMENTATION
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-max_n_retry" class="md-nav__link">
+    define MAX_N_RETRY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-timeout_interval" class="md-nav__link">
+    define TIMEOUT_INTERVAL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-max_queue_size" class="md-nav__link">
+    define MAX_QUEUE_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-block_size" class="md-nav__link">
+    define BLOCK_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-max_payload_size" class="md-nav__link">
+    define MAX_PAYLOAD_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-enc_block_size" class="md-nav__link">
+    define ENC_BLOCK_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-max_enc_payload_size" class="md-nav__link">
+    define MAX_ENC_PAYLOAD_SIZE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-max_msg_id" class="md-nav__link">
+    define MAX_MSG_ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-status_update_interval" class="md-nav__link">
+    define STATUS_UPDATE_INTERVAL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-broadcast_id" class="md-nav__link">
+    define BROADCAST_ID
   </a>
   
 </li>
@@ -714,14 +901,52 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/hardtekpt/sensor_network_docs/edit/master/gateway_serial/docs/Gateway/Files/comms__protocol_8cpp.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/hardtekpt/sensor_network_docs/edit/master/gateway_serial/docs/Files/comms__protocol_8h.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="comms_protocolcpp">comms_protocol.cpp</h1>
-<p>Communication Protocol library - set of functions and data structures used to build a network using the LoRa modulation radios.  <a href="#detailed-description">More...</a></p>
+<h1 id="comms_protocolh">comms_protocol.h</h1>
+<p>Header file for the communication protocol library. Contains the used data structures, function declaration and general configuartion options for the library.  <a href="#detailed-description">More...</a></p>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>struct</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/">strPayload</a></strong></td>
+</tr>
+<tr>
+<td>struct</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_msg/">strMsg</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>typedef struct <a href="/sensor_network_docs/Gateway/Classes/structstr_payload/">strPayload</a></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#typedef-payload">Payload</a></strong></td>
+</tr>
+<tr>
+<td>typedef struct <a href="/sensor_network_docs/Gateway/Classes/structstr_msg/">strMsg</a></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#typedef-msg">Msg</a></strong></td>
+</tr>
+</tbody>
+</table>
 <h2 id="functions">Functions</h2>
 <table>
 <thead>
@@ -732,56 +957,60 @@
 </thead>
 <tbody>
 <tr>
-<td>cppQueue</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-msg-q">msg_q</a></strong>(sizeof(<a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#typedef-msg">Msg</a>) , <a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-queue-size">MAX_QUEUE_SIZE</a> , <a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-implementation">IMPLEMENTATION</a> )</td>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-rxmode">LoRa_rxMode</a></strong>()<br>Sets the LoRa radio to receive mode.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-lora-rxmode">LoRa_rxMode</a></strong>()<br>Sets the LoRa radio to receive mode.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-txmode">LoRa_txMode</a></strong>()<br>Sets the LoRa radio to transmit mode.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-lora-txmode">LoRa_txMode</a></strong>()<br>Sets the LoRa radio to transmit mode.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-lora-sendmessage">LoRa_sendMessage</a></strong>(byte * message)<br>Sets the radio to transmit mode, sends a message string using the LoRa radio and sets the radio back to receive mode.</td>
-</tr>
-<tr>
-<td>byte *</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-splitandencrypt2">splitAndEncrypt2</a></strong>(char msg[MAX_PAYLOAD_SIZE])<br>Encrypts a message (character array) using the AES256 algorythm with the corresponding node key The encryption is made by encrypting blocks of 16 bytes and joining them together.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-sendmessage">LoRa_sendMessage</a></strong>(byte * message)<br>Sets the radio to transmit mode, sends a message string using the LoRa radio and sets the radio back to receive mode.</td>
 </tr>
 <tr>
 <td>char *</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-decryptmsg2">decryptMsg2</a></strong>(char msg[MAX_PAYLOAD_SIZE+1])<br>Decrypts a message string using the AES256 algorythm with the corresponding node key.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-decryptmsg">decryptMsg</a></strong>(String msg)</td>
+</tr>
+<tr>
+<td>char *</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-decryptmsg2">decryptMsg2</a></strong>(char msg[MAX_PAYLOAD_SIZE+1])<br>Decrypts a message string using the AES256 algorythm with the corresponding node key.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-onreceive">onReceive</a></strong>(int packetSize)<br>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-ontxdone">onTxDone</a></strong>()</td>
+</tr>
+<tr>
+<td>String</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-splitandencrypt">splitAndEncrypt</a></strong>(char msg[MAX_PAYLOAD_SIZE])</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendsensordata">sendSensorData</a></strong>(byte sensorID, byte sensorVal)<br>Adds to the message queue an uplink message containing sensor data.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-getmsgfromqueueandsend">getMsgFromQueueAndSend</a></strong>(unsigned long currentMillis)<br>Get a message from the send queue and send it. Implements retransmission in case an acknowledge message is not received. Aware of a failed transmission.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendstatus">sendStatus</a></strong>(byte msgID)<br>Send an uplink message containing the node status.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendack">sendAck</a></strong>(byte msgID)<br>Send an acknowledge message confirming the reception of an uplink transmission.</td>
+</tr>
+<tr>
+<td>void</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-setactstate">setActState</a></strong>(int ID, int val)<br>Sets the state of the relevant actuator with the relevant value.</td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-mymin">mymin</a></strong>(int a, int b)<br>returns the minimum value between two integers</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-sendack">sendAck</a></strong>(byte msgID)<br>Send an acknowledge message confirming the reception of an uplink transmission.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-sendstatus">sendStatus</a></strong>(byte msgID)<br>Send an uplink message containing the node status.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-setactstate">setActState</a></strong>(int ID, int val)<br>Sets the state of the relevant actuator with the relevant value.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-sendsensordata">sendSensorData</a></strong>(byte sensorID, byte sensorVal)<br>Adds to the message queue an uplink message containing sensor data.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-getmsgfromqueueandsend">getMsgFromQueueAndSend</a></strong>(unsigned long currentMillis)<br>Get a message from the send queue and send it. Implements retransmission in case an acknowledge message is not received. Aware of a failed transmission.</td>
-</tr>
-<tr>
-<td>void</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#function-onreceive">onReceive</a></strong>(int packetSize)<br>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-mymin">mymin</a></strong>(int a, int b)<br>returns the minimum value between two integers</td>
 </tr>
 </tbody>
 </table>
@@ -795,49 +1024,128 @@
 </thead>
 <tbody>
 <tr>
-<td>int</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-currmsg">currMsg</a></strong></td>
+<td>const uint8_t</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-keybroadcast">keyBroadcast</a></strong></td>
+</tr>
+<tr>
+<td>const long</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-frequency">frequency</a></strong></td>
+</tr>
+<tr>
+<td>const int</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-txpower">txPower</a></strong></td>
+</tr>
+<tr>
+<td>const int</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-spreadingfactor">spreadingFactor</a></strong></td>
+</tr>
+<tr>
+<td>const long</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-signalbandwidth">signalBandwidth</a></strong></td>
+</tr>
+<tr>
+<td>const int</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-codingratedenominator">codingRateDenominator</a></strong></td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-count">count</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-currmsg">currMsg</a></strong></td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-count">count</a></strong></td>
 </tr>
 <tr>
 <td>unsigned long</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-prevmil">prevMil</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-prevmil">prevMil</a></strong></td>
 </tr>
 <tr>
 <td>unsigned long</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-prevmilsu">prevMilSU</a></strong></td>
-</tr>
-<tr>
-<td>float</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-vbat">VBAT</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-prevmilsu">prevMilSU</a></strong></td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-msgcount">msgCount</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-msgcount">msgCount</a></strong></td>
+</tr>
+<tr>
+<td>cppQueue</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-msg-q">msg_q</a></strong></td>
 </tr>
 <tr>
 <td>aes256_context</td>
-<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#variable-ctxt">ctxt</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-ctxt">ctxt</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="defines">Defines</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-implementation">IMPLEMENTATION</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-n-retry">MAX_N_RETRY</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-timeout-interval">TIMEOUT_INTERVAL</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-queue-size">MAX_QUEUE_SIZE</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-block-size">BLOCK_SIZE</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-payload-size">MAX_PAYLOAD_SIZE</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-enc-block-size">ENC_BLOCK_SIZE</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-enc-payload-size">MAX_ENC_PAYLOAD_SIZE</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-msg-id">MAX_MSG_ID</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-status-update-interval">STATUS_UPDATE_INTERVAL</a></strong></td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-broadcast-id">BROADCAST_ID</a></strong></td>
 </tr>
 </tbody>
 </table>
 <h2 id="detailed-description">Detailed Description</h2>
-<p>Communication Protocol library - set of functions and data structures used to build a network using the LoRa modulation radios. </p>
+<p>Header file for the communication protocol library. Contains the used data structures, function declaration and general configuartion options for the library. </p>
 <p><strong>Author</strong>: Francisco Santos (<a href="mailto:francisco.velez@tecnico.ulisboa.pt">francisco.velez@tecnico.ulisboa.pt</a>) </p>
 <p><strong>Version</strong>: 1.0 </p>
 <p><strong>Date</strong>: 2022-08-10</p>
 <p><strong>Copyright</strong>: Copyright (c) 2022 </p>
-<h2 id="functions-documentation">Functions Documentation</h2>
-<h3 id="function-msg_q">function msg_q</h3>
-<pre><code class="language-cpp">cppQueue msg_q(
-    sizeof(Msg) ,
-    MAX_QUEUE_SIZE ,
-    IMPLEMENTATION 
-)
+<h2 id="types-documentation">Types Documentation</h2>
+<h3 id="typedef-payload">typedef Payload</h3>
+<pre><code class="language-cpp">typedef struct strPayload Payload;
 </code></pre>
+<h3 id="typedef-msg">typedef Msg</h3>
+<pre><code class="language-cpp">typedef struct strMsg Msg;
+</code></pre>
+<h2 id="functions-documentation">Functions Documentation</h2>
 <h3 id="function-lora_rxmode">function LoRa_rxMode</h3>
 <pre><code class="language-cpp">void LoRa_rxMode()
 </code></pre>
@@ -859,17 +1167,11 @@
 <li><strong>message</strong> message to send </li>
 </ul>
 <p><strong>Return</strong>: void </p>
-<h3 id="function-splitandencrypt2">function splitAndEncrypt2</h3>
-<pre><code class="language-cpp">byte * splitAndEncrypt2(
-    char msg[MAX_PAYLOAD_SIZE]
+<h3 id="function-decryptmsg">function decryptMsg</h3>
+<pre><code class="language-cpp">char * decryptMsg(
+    String msg
 )
 </code></pre>
-<p>Encrypts a message (character array) using the AES256 algorythm with the corresponding node key The encryption is made by encrypting blocks of 16 bytes and joining them together. </p>
-<p><strong>Parameters</strong>: </p>
-<ul>
-<li><strong>msg</strong> message array to be decrypted </li>
-</ul>
-<p><strong>Return</strong>: byte* a byte array containing the encrypted message </p>
 <h3 id="function-decryptmsg2">function decryptMsg2</h3>
 <pre><code class="language-cpp">char * decryptMsg2(
     char msg[MAX_PAYLOAD_SIZE+1]
@@ -881,54 +1183,25 @@
 <li><strong>msg</strong> message string to be decrypted </li>
 </ul>
 <p><strong>Return</strong>: char* an array of characters containing the decrypted message </p>
-<h3 id="function-mymin">function mymin</h3>
-<pre><code class="language-cpp">int mymin(
-    int a,
-    int b
+<h3 id="function-onreceive">function onReceive</h3>
+<pre><code class="language-cpp">void onReceive(
+    int packetSize
 )
 </code></pre>
-<p>returns the minimum value between two integers </p>
+<p>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
-<li><strong>a</strong> first integer to compare </li>
-<li><strong>b</strong> second integer to compare </li>
-</ul>
-<p><strong>Return</strong>: int the smaller between a and b </p>
-<h3 id="function-sendack">function sendAck</h3>
-<pre><code class="language-cpp">void sendAck(
-    byte msgID
-)
-</code></pre>
-<p>Send an acknowledge message confirming the reception of an uplink transmission. </p>
-<p><strong>Parameters</strong>: </p>
-<ul>
-<li><strong>msgID</strong> ID of the message being acknowledged </li>
+<li><strong>packetSize</strong> size of the incoming message in bytes </li>
 </ul>
 <p><strong>Return</strong>: void </p>
-<h3 id="function-sendstatus">function sendStatus</h3>
-<pre><code class="language-cpp">void sendStatus(
-    byte msgID
+<h3 id="function-ontxdone">function onTxDone</h3>
+<pre><code class="language-cpp">void onTxDone()
+</code></pre>
+<h3 id="function-splitandencrypt">function splitAndEncrypt</h3>
+<pre><code class="language-cpp">String splitAndEncrypt(
+    char msg[MAX_PAYLOAD_SIZE]
 )
 </code></pre>
-<p>Send an uplink message containing the node status. </p>
-<p><strong>Parameters</strong>: </p>
-<ul>
-<li><strong>msgID</strong> ID of the status request message </li>
-</ul>
-<p><strong>Return</strong>: void </p>
-<h3 id="function-setactstate">function setActState</h3>
-<pre><code class="language-cpp">void setActState(
-    int ID,
-    int val
-)
-</code></pre>
-<p>Sets the state of the relevant actuator with the relevant value. </p>
-<p><strong>Parameters</strong>: </p>
-<ul>
-<li><strong>ID</strong> ID of the relevant actuator </li>
-<li><strong>val</strong> value to which the actuator is set to </li>
-</ul>
-<p><strong>Return</strong>: void </p>
 <h3 id="function-sendsensordata">function sendSensorData</h3>
 <pre><code class="language-cpp">void sendSensorData(
     byte sensorID,
@@ -954,23 +1227,83 @@
 <li><strong>currentMillis</strong> current time in millisenconds since boot </li>
 </ul>
 <p><strong>Return</strong>: void </p>
-<h3 id="function-onreceive">function onReceive</h3>
-<pre><code class="language-cpp">void onReceive(
-    int packetSize
+<h3 id="function-sendstatus">function sendStatus</h3>
+<pre><code class="language-cpp">void sendStatus(
+    byte msgID
 )
 </code></pre>
-<p>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary. </p>
+<p>Send an uplink message containing the node status. </p>
 <p><strong>Parameters</strong>: </p>
 <ul>
-<li><strong>packetSize</strong> size of the incoming message in bytes </li>
+<li><strong>msgID</strong> ID of the status request message </li>
 </ul>
 <p><strong>Return</strong>: void </p>
+<h3 id="function-sendack">function sendAck</h3>
+<pre><code class="language-cpp">void sendAck(
+    byte msgID
+)
+</code></pre>
+<p>Send an acknowledge message confirming the reception of an uplink transmission. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>msgID</strong> ID of the message being acknowledged </li>
+</ul>
+<p><strong>Return</strong>: void </p>
+<h3 id="function-setactstate">function setActState</h3>
+<pre><code class="language-cpp">void setActState(
+    int ID,
+    int val
+)
+</code></pre>
+<p>Sets the state of the relevant actuator with the relevant value. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>ID</strong> ID of the relevant actuator </li>
+<li><strong>val</strong> value to which the actuator is set to </li>
+</ul>
+<p><strong>Return</strong>: void </p>
+<h3 id="function-mymin">function mymin</h3>
+<pre><code class="language-cpp">int mymin(
+    int a,
+    int b
+)
+</code></pre>
+<p>returns the minimum value between two integers </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>a</strong> first integer to compare </li>
+<li><strong>b</strong> second integer to compare </li>
+</ul>
+<p><strong>Return</strong>: int the smaller between a and b </p>
 <h2 id="attributes-documentation">Attributes Documentation</h2>
+<h3 id="variable-keybroadcast">variable keyBroadcast</h3>
+<pre><code class="language-cpp">const uint8_t keyBroadcast = { 
+  0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+  0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+  0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+  0x18, 0x19, 0x1a, 0x1b, 0x1c, 0x1d, 0x1e, 0x0f
+};
+</code></pre>
+<h3 id="variable-frequency">variable frequency</h3>
+<pre><code class="language-cpp">const long frequency = 868E6;
+</code></pre>
+<h3 id="variable-txpower">variable txPower</h3>
+<pre><code class="language-cpp">const int txPower = 14;
+</code></pre>
+<h3 id="variable-spreadingfactor">variable spreadingFactor</h3>
+<pre><code class="language-cpp">const int spreadingFactor = 7;
+</code></pre>
+<h3 id="variable-signalbandwidth">variable signalBandwidth</h3>
+<pre><code class="language-cpp">const long signalBandwidth = 125E3;
+</code></pre>
+<h3 id="variable-codingratedenominator">variable codingRateDenominator</h3>
+<pre><code class="language-cpp">const int codingRateDenominator = 5;
+</code></pre>
 <h3 id="variable-currmsg">variable currMsg</h3>
-<pre><code class="language-cpp">int currMsg = -1;
+<pre><code class="language-cpp">int currMsg;
 </code></pre>
 <h3 id="variable-count">variable count</h3>
-<pre><code class="language-cpp">int count = 0;
+<pre><code class="language-cpp">int count;
 </code></pre>
 <h3 id="variable-prevmil">variable prevMil</h3>
 <pre><code class="language-cpp">unsigned long prevMil;
@@ -978,321 +1311,141 @@
 <h3 id="variable-prevmilsu">variable prevMilSU</h3>
 <pre><code class="language-cpp">unsigned long prevMilSU;
 </code></pre>
-<h3 id="variable-vbat">variable VBAT</h3>
-<pre><code class="language-cpp">float VBAT = 1.0;
-</code></pre>
 <h3 id="variable-msgcount">variable msgCount</h3>
-<pre><code class="language-cpp">int msgCount = 0;
+<pre><code class="language-cpp">int msgCount;
+</code></pre>
+<h3 id="variable-msg_q">variable msg_q</h3>
+<pre><code class="language-cpp">cppQueue msg_q;
 </code></pre>
 <h3 id="variable-ctxt">variable ctxt</h3>
 <pre><code class="language-cpp">aes256_context ctxt;
 </code></pre>
+<h2 id="macros-documentation">Macros Documentation</h2>
+<h3 id="define-implementation">define IMPLEMENTATION</h3>
+<pre><code class="language-cpp">#define IMPLEMENTATION FIFO
+</code></pre>
+<h3 id="define-max_n_retry">define MAX_N_RETRY</h3>
+<pre><code class="language-cpp">#define MAX_N_RETRY 3
+</code></pre>
+<h3 id="define-timeout_interval">define TIMEOUT_INTERVAL</h3>
+<pre><code class="language-cpp">#define TIMEOUT_INTERVAL 1000
+</code></pre>
+<h3 id="define-max_queue_size">define MAX_QUEUE_SIZE</h3>
+<pre><code class="language-cpp">#define MAX_QUEUE_SIZE 5
+</code></pre>
+<h3 id="define-block_size">define BLOCK_SIZE</h3>
+<pre><code class="language-cpp">#define BLOCK_SIZE 16
+</code></pre>
+<h3 id="define-max_payload_size">define MAX_PAYLOAD_SIZE</h3>
+<pre><code class="language-cpp">#define MAX_PAYLOAD_SIZE 16
+</code></pre>
+<h3 id="define-enc_block_size">define ENC_BLOCK_SIZE</h3>
+<pre><code class="language-cpp">#define ENC_BLOCK_SIZE (1*BLOCK_SIZE)
+</code></pre>
+<h3 id="define-max_enc_payload_size">define MAX_ENC_PAYLOAD_SIZE</h3>
+<pre><code class="language-cpp">#define MAX_ENC_PAYLOAD_SIZE ((MAX_PAYLOAD_SIZE/BLOCK_SIZE)*ENC_BLOCK_SIZE)+1
+</code></pre>
+<h3 id="define-max_msg_id">define MAX_MSG_ID</h3>
+<pre><code class="language-cpp">#define MAX_MSG_ID 256
+</code></pre>
+<h3 id="define-status_update_interval">define STATUS_UPDATE_INTERVAL</h3>
+<pre><code class="language-cpp">#define STATUS_UPDATE_INTERVAL 60000
+</code></pre>
+<h3 id="define-broadcast_id">define BROADCAST_ID</h3>
+<pre><code class="language-cpp">#define BROADCAST_ID 0xFF
+</code></pre>
 <h2 id="source-code">Source code</h2>
 <pre><code class="language-cpp">
-#include &quot;comms_protocol.h&quot;
+#ifndef COMMS_PROTOCOL_H
+#define COMMS_PROTOCOL_H
 
-int currMsg = -1;
-int count = 0;
-unsigned long prevMil;
-unsigned long prevMilSU;
-float VBAT = 1.0;
-int msgCount = 0;
+#include &lt;Arduino.h&gt;
+#include &lt;SPI.h&gt;              
+#include &lt;LoRa.h&gt;
+#include &lt;cppQueue.h&gt;
+#include &lt;aes256.h&gt;
+#include &quot;node_definitions.h&quot;
 
-cppQueue  msg_q(sizeof(Msg), MAX_QUEUE_SIZE, IMPLEMENTATION);
-aes256_context ctxt;
+#define  IMPLEMENTATION  FIFO
 
-void LoRa_rxMode() {
-  LoRa.enableInvertIQ();
-  LoRa.receive();
-}
+// LoRa msg payload settings
+#define MAX_N_RETRY 3
+#define TIMEOUT_INTERVAL 1000
+#define MAX_QUEUE_SIZE 5
 
-void LoRa_txMode() {
-  LoRa.idle();
-  LoRa.disableInvertIQ();
-}
+#define BLOCK_SIZE 16
+#define MAX_PAYLOAD_SIZE 16
+#define ENC_BLOCK_SIZE (1*BLOCK_SIZE)
+#define MAX_ENC_PAYLOAD_SIZE ((MAX_PAYLOAD_SIZE/BLOCK_SIZE)*ENC_BLOCK_SIZE)+1
 
-void LoRa_sendMessage(byte *message) {
-  LoRa_txMode();                        // set tx mode
-  LoRa.beginPacket();                   // start packet
-  LoRa.write(netID);
-  LoRa.write(nodeID);
-  //LoRa.print(message);                  // add payload
-  LoRa.write(message, MAX_ENC_PAYLOAD_SIZE);
-  LoRa.endPacket(false);                 // finish packet and send it
-  LoRa_rxMode();
-}
+#define MAX_MSG_ID 256
 
+#define STATUS_UPDATE_INTERVAL 60000
 
-/*String splitAndEncrypt(char msg[MAX_PAYLOAD_SIZE]) {
-  String enc = &quot;&quot;;
-  aes256_init(&amp;ctxt,(uint8_t *) key);
-  const char * p = msg;
+#define BROADCAST_ID 0xFF
 
-  while (strlen (p) &gt; 0) {
-    byte plain [BLOCK_SIZE];
-    memset (plain, 0, BLOCK_SIZE);  // ensure trailing zeros
-    memcpy (plain, p, mymin (strlen (p), BLOCK_SIZE));
-
-    aes256_encrypt_ecb(&amp;ctxt, plain);
-    enc += String((char *)plain);
-    p += mymin (strlen (p), BLOCK_SIZE);
-  }
-  aes256_done(&amp;ctxt);
-  return enc;
-}*/
-
-byte *splitAndEncrypt2(char msg[MAX_PAYLOAD_SIZE]) {
-  String enc = &quot;&quot;;
-  aes256_init(&amp;ctxt,(uint8_t *) key);
-  const char * p = msg;
-  static byte plain [BLOCK_SIZE];
-  while (strlen (p) &gt; 0) {
-
-    memset (plain, 0, BLOCK_SIZE);  // ensure trailing zeros
-    memcpy (plain, p, mymin (strlen (p), BLOCK_SIZE));
-
-    aes256_encrypt_ecb(&amp;ctxt, plain);
-    return plain;
-    enc += String((char *)plain);
-    p += mymin (strlen (p), BLOCK_SIZE);
-  }
-  aes256_done(&amp;ctxt);
-}
-
-/*
- * Function: decryptMsg
- * ----------------------------
- *   Decrypts a message string using the AES256 algorythm with the corresponding node key
- *   
- *   msg: message string to be decrypted
- *
- *   returns: an array of characters containing the decrypted message
-
-char  *decryptMsg(String msg) {
-  static uint8_t data[MAX_PAYLOAD_SIZE+1];
-  static char m[MAX_PAYLOAD_SIZE+1];
-  msg.toCharArray(m, MAX_PAYLOAD_SIZE+1);
-  aes256_decrypt_ecb(&amp;ctxt, (uint8_t *)m);
-  return (char *)m;
-}*/
-
-char  *decryptMsg2(char msg[MAX_PAYLOAD_SIZE+1]) {
-  static uint8_t data[MAX_PAYLOAD_SIZE+1];
-  memcpy(data, msg, MAX_PAYLOAD_SIZE+1);
-  //static char m[MAX_PAYLOAD_SIZE+1];
-  //msg.toCharArray(m, MAX_PAYLOAD_SIZE+1);
-  aes256_decrypt_ecb(&amp;ctxt, (uint8_t *)data);
-  return (char *)data;
-}
-
-
-int mymin(int a, int b){
-  if (a&gt;b)
-    return b;
-  return a;
-}
+// Broadcast Encryption key
+const uint8_t keyBroadcast[] = { //
+  0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+  0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f,
+  0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+  0x18, 0x19, 0x1a, 0x1b, 0x1c, 0x1d, 0x1e, 0x0f
+};
 
 
 
-void sendAck(byte msgID) {
-  String enc;
-  char payload[MAX_PAYLOAD_SIZE];
-  char encP[MAX_ENC_PAYLOAD_SIZE];
-  byte l = (byte)MAX_PAYLOAD_SIZE;
-  Msg msg;
+// LoRa Modem Settings
+const long frequency = 868E6;
+const int txPower = 14;
+const int spreadingFactor = 7;
+const long signalBandwidth = 125E3;
+const int codingRateDenominator = 5;
 
-  #if defined(ESP32)
-    VBAT = (float)(analogRead(vbatPin)) / 4095*2*3.3*1.1;
-  #endif
-  int a = VBAT;
-  int b = VBAT*10-a*10;
-  sprintf(payload, &quot;%c%c%c%c%c%c%c%c&quot;, (char)nodeID, (char)msgID, (char)l, 'a', (char)48, (char)48, (char)a+1, (char)b+1);
+typedef struct strPayload {
+  byte nodeID;
+  byte sensorID;
+  byte msgID;
+  char flag;
+  byte sensorVal;
+  int RSSI;
+  float SNR;
+} Payload;
 
-  //enc = splitAndEncrypt(payload);
-  //enc.toCharArray(msg.msg, MAX_ENC_PAYLOAD_SIZE);
-  byte *plain = splitAndEncrypt2(payload);
-  memcpy(msg.msg, plain, MAX_PAYLOAD_SIZE);
-  msg.msg[MAX_PAYLOAD_SIZE] = '\0';
+typedef struct strMsg {
+  byte msg[MAX_ENC_PAYLOAD_SIZE];
+  byte msgID;
+  char flag;
+} Msg;
 
-  Serial.print(&quot;add ack to queue: &quot;);
-  Serial.println(payload);
-  //Serial.print(&quot;enc msg: &quot;);
-  //Serial.println(msg.msg);
+extern int currMsg;
+extern int count;
+extern unsigned long prevMil;
+extern unsigned long prevMilSU;
+extern int msgCount;
 
-  msg.msgID = msgID;
-  msg.flag = 'a';  
-  msg_q.push(&amp;msg);
-}
+extern cppQueue msg_q;
+extern aes256_context ctxt;
 
+void LoRa_rxMode();
+void LoRa_txMode();
+void LoRa_sendMessage(byte *message);
+char  *decryptMsg(String msg);
+char  *decryptMsg2(char msg[MAX_PAYLOAD_SIZE+1]);
 
-void sendStatus(byte msgID) {
-  Msg msg;
-  String enc;
-  char payload[MAX_PAYLOAD_SIZE];
-  msg.msgID = msgID;
-  byte l = (byte) MAX_PAYLOAD_SIZE;
+void onReceive(int packetSize);
+void onTxDone();
+String splitAndEncrypt(char msg[MAX_PAYLOAD_SIZE]);
+void sendSensorData(byte sensorID, byte sensorVal);
+void getMsgFromQueueAndSend(unsigned long currentMillis);
+void sendStatus(byte msgID);
+void sendAck(byte msgID);
+void setActState(int ID, int val);
+int mymin(int a, int b);
 
-  #if defined(ESP32)
-    VBAT = (float)(analogRead(vbatPin)) / 4095*2*3.3*1.1;
-  #endif
-  int a = VBAT;
-  int b = VBAT*10-a*10;
-  sprintf(payload, &quot;%c%c%c%c%c%c%c%c&quot;, (char)nodeID, (char)msgID, (char)l, 's', (char)48, (char)48, (char)a+1, (char)b+1);
-
-  //enc = splitAndEncrypt(payload);
-  //enc.toCharArray(msg.msg, MAX_ENC_PAYLOAD_SIZE);
-  byte *plain = splitAndEncrypt2(payload);
-  memcpy(msg.msg, plain, MAX_PAYLOAD_SIZE);
-  msg.msg[MAX_PAYLOAD_SIZE] = '\0';
-
-  Serial.print(&quot;add status to queue: &quot;);
-  Serial.println(payload);
-  //Serial.print(&quot;enc msg: &quot;);
-  //Serial.println(msg.msg);
-
-  // Add msg to msg queue
-  msg.flag = 's';
-  msg_q.push(&amp;msg);
-}
-
-void setActState(int ID, int val) {
-  Serial.print(&quot;Set actuator: &quot;);
-  Serial.print(ID);
-  Serial.print(&quot; with value: &quot;);
-  Serial.println(val);
-  digitalWrite(actPin[ID], val);
-}
-
-void sendSensorData(byte sensorID, byte sensorVal) {
-  Msg msg;
-  String enc;
-  char payload[MAX_PAYLOAD_SIZE];
-  msgCount ++;
-  if (msgCount == 0)
-    msgCount ++;
-  msg.msgID = (byte) msgCount;
-  byte l = MAX_PAYLOAD_SIZE;
-
-  #if defined(ESP32)
-    VBAT = (float)(analogRead(vbatPin)) / 4095*2*3.3*1.1;
-  #endif
-  Serial.println(VBAT);
-  int a = VBAT;
-  int b = VBAT*10-a*10;
-  sprintf(payload, &quot;%c%c%c%c%c%c%c%c&quot;, (char)nodeID, (char)msg.msgID, (char)l, 'u', (char)(sensorID + 1), (char)(sensorVal + 1), (char)a+1, (char)b+1);
-
-  //enc = splitAndEncrypt(payload);
-  //enc.toCharArray(msg.msg, MAX_ENC_PAYLOAD_SIZE);
-  byte *plain = splitAndEncrypt2(payload);
-  memcpy(msg.msg, plain, MAX_PAYLOAD_SIZE);
-  msg.msg[MAX_PAYLOAD_SIZE] = '\0';
-
-  // Add msg to msg queue
-  msg.flag = 'u';
-  msg_q.push(&amp;msg);
-}
-
-void getMsgFromQueueAndSend(unsigned long currentMillis) {
-  if (!msg_q.isEmpty()) {
-    Msg msg;
-    msg_q.peek(&amp;msg);
-
-    if (currMsg == msg.msgID)
-      count ++;
-    else
-      count = 0;
-
-    currMsg = msg.msgID;
-    if (count &lt; MAX_N_RETRY) {
-      Serial.print(&quot;send msg: &quot;);
-      //Serial.println(msg.msg);
-      LoRa_sendMessage(msg.msg);
-      if ((msg.flag == 's') || (msg.flag == 'a')){
-        msg_q.drop();
-        currMsg = -1;
-      }
-    } else {
-      Serial.print(&quot;Failed to send msg with id: &quot;);
-      Serial.println(msg.msgID);
-      msg_q.drop();
-      currMsg = -1;
-    }
-    prevMil = currentMillis;
-  }
-}
-
-void onReceive(int packetSize){
-  byte rNetID = LoRa.read();
-  byte rnID = LoRa.read();
-  char buffer1[MAX_ENC_PAYLOAD_SIZE];
-  char buffer2[MAX_ENC_PAYLOAD_SIZE];
-  String message = &quot;&quot;;
-  int i=0;
-  while (LoRa.available() &amp;&amp; i&lt;MAX_ENC_PAYLOAD_SIZE) {
-    //Serial.println(LoRa.peek(), HEX);
-    buffer1[i] = (char)LoRa.read();
-    //message += (char)LoRa.read();
-
-    i++;
-  }
-  Serial.println(&quot;msg&quot;);
-  //Serial.println(message.length());
-  //Serial.println(MAX_ENC_PAYLOAD_SIZE);
-  //Serial.println(rNetID == netID);
-  if (rNetID == netID) {
-    Serial.println(&quot;New msg received&quot;);
-
-
-    //int j = message.length() / ENC_BLOCK_SIZE;
-    //int h = message.length() / (1 * j);
-
-    byte len;
-    Payload p;
-
-    if (rnID == BROADCAST_ID)
-      aes256_init(&amp;ctxt,(uint8_t *) keyBroadcast);
-    else
-      aes256_init(&amp;ctxt,(uint8_t *) key);
-    //for (int i = 0; i &lt; j; i++) {
-    //  if (i == 0)
-    //    strcpy(buffer1, decryptMsg(message.substring(i * ENC_BLOCK_SIZE, (i + 1) * ENC_BLOCK_SIZE)));
-    //  else
-    //    strcat(buffer1, decryptMsg(message.substring(i * ENC_BLOCK_SIZE, (i + 1) * ENC_BLOCK_SIZE)));
-    //}
-    strcpy(buffer2, decryptMsg2(buffer1));
-    aes256_done(&amp;ctxt);
-
-    buffer2[6] = '\0';
-
-    Serial.println(buffer2);
-    if(sscanf(buffer2, &quot;%c%c%c%c%c%c&quot;, &amp;p.nodeID, &amp;p.msgID, &amp;len, &amp;p.flag, &amp;p.sensorID, &amp;p.sensorVal) == 6){
-      Serial.println(p.flag);
-      Msg msg;
-      msg_q.peek(&amp;msg);
-      if (p.nodeID == nodeID || p.nodeID == BROADCAST_ID) {
-        if (p.flag == 'a') {
-          if (p.msgID == msg.msgID) {
-            Serial.print(&quot;Message with ID: &quot;);
-            Serial.print(p.msgID);
-            Serial.println(&quot; delivered!&quot;);
-            msg_q.drop();
-          }
-        } else if (p.flag == 's') {
-          Serial.print(&quot;received msg with id: &quot;);
-          Serial.println(p.msgID);
-          sendStatus(p.msgID);
-        } else if (p.flag == 'c') {
-          // Set actuator value and send ack
-          setActState((int)(p.sensorID - 1), (int)(p.sensorVal - 1));
-          sendAck(p.msgID);
-        }
-      }
-    }  
-  }
-}
+#endif
 </code></pre>
 <hr />
-<p>Updated on 2022-08-25 at 14:12:55 +0000</p>
+<p>Updated on 2022-08-25 at 14:14:39 +0000</p>
 
 
 
@@ -1328,10 +1481,10 @@ void onReceive(int packetSize){
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
       
     
   </body>

@@ -6,6 +6,61 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Classes/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Classes/structstr_msg/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Classes/structstr_payload/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Examples/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Files/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Files/comms__protocol_8h/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Files/gateway__serial_8ino/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Modules/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Namespaces/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hardtekpt.github.io/sensor_network_docs/Gateway/Pages/</loc>
+         <lastmod>2022-08-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://hardtekpt.github.io/sensor_network_docs/Node/Classes/</loc>
          <lastmod>2022-08-25</lastmod>
          <changefreq>daily</changefreq>
@@ -107,61 +162,6 @@
     </url>
     <url>
          <loc>https://hardtekpt.github.io/sensor_network_docs/pages/repo_structure/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Classes/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Classes/structstr_msg/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Classes/structstr_payload/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Examples/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/comms__protocol_8h/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/gateway__serial_8ino/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Modules/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Namespaces/</loc>
-         <lastmod>2022-08-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Pages/</loc>
          <lastmod>2022-08-25</lastmod>
          <changefreq>daily</changefreq>
     </url>

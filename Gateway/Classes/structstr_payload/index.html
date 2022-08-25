@@ -10,14 +10,14 @@
         <meta name="author" content="Francisco Santos">
       
       
-        <link rel="canonical" href="https://hardtekpt.github.io/sensor_network_docs/sensor_network_docs/Gateway/Files/">
+        <link rel="canonical" href="https://hardtekpt.github.io/sensor_network_docs/Gateway/Classes/structstr_payload/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
     
     
       
-        <title>Files - Sensor Network Documentation</title>
+        <title>strPayload - Sensor Network Documentation</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#files" class="md-skip">
+        <a href="#strpayload" class="md-skip">
           Skip to content
         </a>
       
@@ -101,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Files
+              strPayload
             
           </span>
         </div>
@@ -330,16 +330,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -421,14 +419,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
       
       
       
@@ -449,21 +445,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Files/" class="md-nav__link">
         Files
       </a>
-      
     </li>
   
 
@@ -475,7 +461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Classes/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Classes
       </a>
     </li>
@@ -516,6 +502,83 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#public-attributes" class="md-nav__link">
+    Public Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-attributes-documentation" class="md-nav__link">
+    Public Attributes Documentation
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Attributes Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variable-nodeid" class="md-nav__link">
+    variable nodeID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-sensorid" class="md-nav__link">
+    variable sensorID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-msgid" class="md-nav__link">
+    variable msgID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-flag" class="md-nav__link">
+    variable flag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-sensorval" class="md-nav__link">
+    variable sensorVal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-rssi" class="md-nav__link">
+    variable RSSI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-snr" class="md-nav__link">
+    variable SNR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -526,20 +589,77 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/hardtekpt/sensor_network_docs/edit/master/gateway_serial/docs/Gateway/Files/index.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/hardtekpt/sensor_network_docs/edit/master/gateway_serial/docs/Classes/structstr_payload.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="files">Files</h1>
-<ul>
-<li><strong>file <a href="/sensor_network_docs/Gateway/Files/comms__protocol_8cpp/#file-comms-protocol.cpp">comms_protocol.cpp</a></strong> <br>Communication Protocol library - set of functions and data structures used to build a network using the LoRa modulation radios. </li>
-<li><strong>file <a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#file-comms-protocol.h">comms_protocol.h</a></strong> <br>Header file for the communication protocol library. Contains the used data structures, function declaration and general configuartion options for the library. </li>
-<li><strong>file <a href="/sensor_network_docs/Gateway/Files/gateway__serial_8ino/#file-gateway-serial.ino">gateway_serial.ino</a></strong> <br>Gateway script - send sensor data to gateway and receive commands from gateway. </li>
-</ul>
+<h1 id="strpayload">strPayload</h1>
+<p><code>#include &lt;comms_protocol.h&gt;</code></p>
+<h2 id="public-attributes">Public Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-nodeid">nodeID</a></strong></td>
+</tr>
+<tr>
+<td>byte</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-sensorid">sensorID</a></strong></td>
+</tr>
+<tr>
+<td>byte</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-msgid">msgID</a></strong></td>
+</tr>
+<tr>
+<td>char</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-flag">flag</a></strong></td>
+</tr>
+<tr>
+<td>byte</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-sensorval">sensorVal</a></strong></td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-rssi">RSSI</a></strong></td>
+</tr>
+<tr>
+<td>float</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/#variable-snr">SNR</a></strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-attributes-documentation">Public Attributes Documentation</h2>
+<h3 id="variable-nodeid">variable nodeID</h3>
+<pre><code class="language-cpp">byte nodeID;
+</code></pre>
+<h3 id="variable-sensorid">variable sensorID</h3>
+<pre><code class="language-cpp">byte sensorID;
+</code></pre>
+<h3 id="variable-msgid">variable msgID</h3>
+<pre><code class="language-cpp">byte msgID;
+</code></pre>
+<h3 id="variable-flag">variable flag</h3>
+<pre><code class="language-cpp">char flag;
+</code></pre>
+<h3 id="variable-sensorval">variable sensorVal</h3>
+<pre><code class="language-cpp">byte sensorVal;
+</code></pre>
+<h3 id="variable-rssi">variable RSSI</h3>
+<pre><code class="language-cpp">int RSSI;
+</code></pre>
+<h3 id="variable-snr">variable SNR</h3>
+<pre><code class="language-cpp">float SNR;
+</code></pre>
 <hr />
-<p>Updated on 2022-08-25 at 14:12:55 +0000</p>
+<p>Updated on 2022-08-25 at 14:14:39 +0000</p>
 
 
 
@@ -558,42 +678,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../../../Node/Classes/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Classes" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Classes
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../Classes/" class="md-footer__link md-footer__link--next" aria-label="Next: Classes" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Classes
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
