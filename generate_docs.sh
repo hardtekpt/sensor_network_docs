@@ -13,6 +13,13 @@ token=`cat /$PROJECT/.secret`
 for (( j=0; j<length; j++ ));
 do
     cd /$PROJECT/${PACKETS[$j]}
+
+    touch mkdocs.yml
+    printf "site_name: ${PACKETS_NAME[$j]}\n" >> mkdocs.yml
+    printf "nav:\n" >> mkdocs.yml
+    printf "  - Files: \"Files/index.md\"\n" >> mkdocs.yml
+    printf "  - Classes: \"Classes/index.md\"\n" >> mkdocs.yml
+
     mkdir docs
     cd docs
 
@@ -45,6 +52,7 @@ for (( j=0; j<length; j++ ));
 do
     cd /$PROJECT/${PACKETS[$j]}
     rm -r docs
+    rm mkdocs.yml
 done
 
 
