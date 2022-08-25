@@ -1,6 +1,7 @@
 #!/bin/bash 
 
 PROJECT=sensor_network
+REPO_NAME=sensor_network_docs
 
 PACKETS=( node gateway_serial)
 PACKETS_NAME=( Node Gateway )
@@ -15,7 +16,7 @@ do
     mkdir docs
     cd docs
 
-    BASE_URL=/sensor_network_docs/${PACKETS_NAME[$j]}/
+    BASE_URL=/$REPO_NAME/${PACKETS_NAME[$j]}/
     #rm -r * 
     # fix
     doxygen ../../docs/Doxyfile
