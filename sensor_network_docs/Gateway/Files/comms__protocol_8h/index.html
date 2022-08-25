@@ -920,11 +920,11 @@
 <tbody>
 <tr>
 <td>struct</td>
-<td><strong><a href="/Gateway/Classes/structstr_payload/">strPayload</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_payload/">strPayload</a></strong></td>
 </tr>
 <tr>
 <td>struct</td>
-<td><strong><a href="/Gateway/Classes/structstr_msg/">strMsg</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Classes/structstr_msg/">strMsg</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -938,12 +938,12 @@
 </thead>
 <tbody>
 <tr>
-<td>typedef struct <a href="/Gateway/Classes/structstr_payload/">strPayload</a></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#typedef-payload">Payload</a></strong></td>
+<td>typedef struct <a href="/sensor_network_docs/Gateway/Classes/structstr_payload/">strPayload</a></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#typedef-payload">Payload</a></strong></td>
 </tr>
 <tr>
-<td>typedef struct <a href="/Gateway/Classes/structstr_msg/">strMsg</a></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#typedef-msg">Msg</a></strong></td>
+<td>typedef struct <a href="/sensor_network_docs/Gateway/Classes/structstr_msg/">strMsg</a></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#typedef-msg">Msg</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -958,59 +958,59 @@
 <tbody>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-lora-rxmode">LoRa_rxMode</a></strong>()<br>Sets the LoRa radio to receive mode.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-rxmode">LoRa_rxMode</a></strong>()<br>Sets the LoRa radio to receive mode.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-lora-txmode">LoRa_txMode</a></strong>()<br>Sets the LoRa radio to transmit mode.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-txmode">LoRa_txMode</a></strong>()<br>Sets the LoRa radio to transmit mode.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-lora-sendmessage">LoRa_sendMessage</a></strong>(byte * message)<br>Sets the radio to transmit mode, sends a message string using the LoRa radio and sets the radio back to receive mode.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-lora-sendmessage">LoRa_sendMessage</a></strong>(byte * message)<br>Sets the radio to transmit mode, sends a message string using the LoRa radio and sets the radio back to receive mode.</td>
 </tr>
 <tr>
 <td>char *</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-decryptmsg">decryptMsg</a></strong>(String msg)</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-decryptmsg">decryptMsg</a></strong>(String msg)</td>
 </tr>
 <tr>
 <td>char *</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-decryptmsg2">decryptMsg2</a></strong>(char msg[MAX_PAYLOAD_SIZE+1])<br>Decrypts a message string using the AES256 algorythm with the corresponding node key.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-decryptmsg2">decryptMsg2</a></strong>(char msg[MAX_PAYLOAD_SIZE+1])<br>Decrypts a message string using the AES256 algorythm with the corresponding node key.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-onreceive">onReceive</a></strong>(int packetSize)<br>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-onreceive">onReceive</a></strong>(int packetSize)<br>Called every time a new message is received. Filters unwanted messages, decrypts the payload, gets the relevant fields from the payload and sends back an acknowledge message if necessary.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-ontxdone">onTxDone</a></strong>()</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-ontxdone">onTxDone</a></strong>()</td>
 </tr>
 <tr>
 <td>String</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-splitandencrypt">splitAndEncrypt</a></strong>(char msg[MAX_PAYLOAD_SIZE])</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-splitandencrypt">splitAndEncrypt</a></strong>(char msg[MAX_PAYLOAD_SIZE])</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-sendsensordata">sendSensorData</a></strong>(byte sensorID, byte sensorVal)<br>Adds to the message queue an uplink message containing sensor data.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendsensordata">sendSensorData</a></strong>(byte sensorID, byte sensorVal)<br>Adds to the message queue an uplink message containing sensor data.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-getmsgfromqueueandsend">getMsgFromQueueAndSend</a></strong>(unsigned long currentMillis)<br>Get a message from the send queue and send it. Implements retransmission in case an acknowledge message is not received. Aware of a failed transmission.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-getmsgfromqueueandsend">getMsgFromQueueAndSend</a></strong>(unsigned long currentMillis)<br>Get a message from the send queue and send it. Implements retransmission in case an acknowledge message is not received. Aware of a failed transmission.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-sendstatus">sendStatus</a></strong>(byte msgID)<br>Send an uplink message containing the node status.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendstatus">sendStatus</a></strong>(byte msgID)<br>Send an uplink message containing the node status.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-sendack">sendAck</a></strong>(byte msgID)<br>Send an acknowledge message confirming the reception of an uplink transmission.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-sendack">sendAck</a></strong>(byte msgID)<br>Send an acknowledge message confirming the reception of an uplink transmission.</td>
 </tr>
 <tr>
 <td>void</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-setactstate">setActState</a></strong>(int ID, int val)<br>Sets the state of the relevant actuator with the relevant value.</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-setactstate">setActState</a></strong>(int ID, int val)<br>Sets the state of the relevant actuator with the relevant value.</td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#function-mymin">mymin</a></strong>(int a, int b)<br>returns the minimum value between two integers</td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#function-mymin">mymin</a></strong>(int a, int b)<br>returns the minimum value between two integers</td>
 </tr>
 </tbody>
 </table>
@@ -1025,55 +1025,55 @@
 <tbody>
 <tr>
 <td>const uint8_t</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-keybroadcast">keyBroadcast</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-keybroadcast">keyBroadcast</a></strong></td>
 </tr>
 <tr>
 <td>const long</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-frequency">frequency</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-frequency">frequency</a></strong></td>
 </tr>
 <tr>
 <td>const int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-txpower">txPower</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-txpower">txPower</a></strong></td>
 </tr>
 <tr>
 <td>const int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-spreadingfactor">spreadingFactor</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-spreadingfactor">spreadingFactor</a></strong></td>
 </tr>
 <tr>
 <td>const long</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-signalbandwidth">signalBandwidth</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-signalbandwidth">signalBandwidth</a></strong></td>
 </tr>
 <tr>
 <td>const int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-codingratedenominator">codingRateDenominator</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-codingratedenominator">codingRateDenominator</a></strong></td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-currmsg">currMsg</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-currmsg">currMsg</a></strong></td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-count">count</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-count">count</a></strong></td>
 </tr>
 <tr>
 <td>unsigned long</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-prevmil">prevMil</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-prevmil">prevMil</a></strong></td>
 </tr>
 <tr>
 <td>unsigned long</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-prevmilsu">prevMilSU</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-prevmilsu">prevMilSU</a></strong></td>
 </tr>
 <tr>
 <td>int</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-msgcount">msgCount</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-msgcount">msgCount</a></strong></td>
 </tr>
 <tr>
 <td>cppQueue</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-msg-q">msg_q</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-msg-q">msg_q</a></strong></td>
 </tr>
 <tr>
 <td>aes256_context</td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#variable-ctxt">ctxt</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#variable-ctxt">ctxt</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -1088,47 +1088,47 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-implementation">IMPLEMENTATION</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-implementation">IMPLEMENTATION</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-max-n-retry">MAX_N_RETRY</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-n-retry">MAX_N_RETRY</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-timeout-interval">TIMEOUT_INTERVAL</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-timeout-interval">TIMEOUT_INTERVAL</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-max-queue-size">MAX_QUEUE_SIZE</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-queue-size">MAX_QUEUE_SIZE</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-block-size">BLOCK_SIZE</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-block-size">BLOCK_SIZE</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-max-payload-size">MAX_PAYLOAD_SIZE</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-payload-size">MAX_PAYLOAD_SIZE</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-enc-block-size">ENC_BLOCK_SIZE</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-enc-block-size">ENC_BLOCK_SIZE</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-max-enc-payload-size">MAX_ENC_PAYLOAD_SIZE</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-enc-payload-size">MAX_ENC_PAYLOAD_SIZE</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-max-msg-id">MAX_MSG_ID</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-max-msg-id">MAX_MSG_ID</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-status-update-interval">STATUS_UPDATE_INTERVAL</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-status-update-interval">STATUS_UPDATE_INTERVAL</a></strong></td>
 </tr>
 <tr>
 <td></td>
-<td><strong><a href="/Gateway/Files/comms__protocol_8h/#define-broadcast-id">BROADCAST_ID</a></strong></td>
+<td><strong><a href="/sensor_network_docs/Gateway/Files/comms__protocol_8h/#define-broadcast-id">BROADCAST_ID</a></strong></td>
 </tr>
 </tbody>
 </table>
@@ -1445,7 +1445,7 @@ int mymin(int a, int b);
 #endif
 </code></pre>
 <hr />
-<p>Updated on 2022-08-25 at 14:08:34 +0000</p>
+<p>Updated on 2022-08-25 at 14:12:55 +0000</p>
 
 
 

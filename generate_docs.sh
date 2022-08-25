@@ -15,7 +15,7 @@ do
     mkdir docs
     cd docs
 
-    BASE_URL=/${PACKETS_NAME[$j]}/
+    BASE_URL=/sensor_network_docs/${PACKETS_NAME[$j]}/
     #rm -r * 
     # fix
     doxygen ../../docs/Doxyfile
