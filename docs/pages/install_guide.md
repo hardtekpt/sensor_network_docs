@@ -4,14 +4,14 @@
 
 In order to set-up such a wireless sensor network, the following software is required:
 
-- Arduino IDE
-- Python3
+- Arduino IDE;
+- Python3.
 
 Additionally, the following Arduino libraries are required:
 
-- [LoRa.h](https://github.com/sandeepmistry/arduino-LoRa)
-- [cppQueue.h](https://github.com/SMFSW/Queue)
-- [aes256.h](https://github.com/ilvn/aes256)
+- [LoRa.h](https://github.com/sandeepmistry/arduino-LoRa);
+- [cppQueue.h](https://github.com/SMFSW/Queue);
+- [aes256.h](https://github.com/ilvn/aes256).
 
 ## Clone the repository
 

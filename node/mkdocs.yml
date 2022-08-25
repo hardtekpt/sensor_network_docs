@@ -1,5 +1,0 @@
-site_name: Node
-nav:
-  #- Index: "index.md"
-  - Files: "Files/index.md"
-  - Classes: "Classes/index.md"
