@@ -35,6 +35,7 @@ RUN apt-get update && \
     wget \
     curl \
     git \
+    ssh \
     python3-pip \
     doxygen \
     unzip \

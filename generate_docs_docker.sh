@@ -14,3 +14,5 @@ docker stop wsn_docs_generator
 
 docker rm wsn_docs_generator
 
+exit 0
+
