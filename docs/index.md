@@ -1,6 +1,9 @@
 # Sensor Network
 
-This repository holds the Sensor Network code stack for a LoRa based wireless sensor network. It contains the packages needed for deploying and monitoring a network with a gateway and node devices.
+This repository holds the Sensor Network code stack for a LoRa based wireless sensor network. It contains the packages needed for deploying and monitoring a network with a gateway and node devices. The figure below depicts the network architecture used.
+
+![WSN Architecture Diagram](/assets/wsl_net_arch.pdf "WSN Architecture Diagram")
+
 
 ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/hardtekpt/sensor_network/master)
 ![GitHub contributors](https://img.shields.io/github/contributors/hardtekpt/sensor_network)
